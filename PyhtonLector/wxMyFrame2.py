@@ -81,7 +81,7 @@ class MyFrame2 ( wx.Frame ):
 		
 		# Cell Defaults
 		self.m_grid1.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
-		bSizer64.Add( self.m_grid1, 1, wx.ALL, 5 )
+		bSizer64.Add( self.m_grid1, 1, wx.ALL|wx.EXPAND, 5 )
 		
 		
 		bSizer7.Add( bSizer64, 1, wx.EXPAND, 5 )
@@ -92,10 +92,10 @@ class MyFrame2 ( wx.Frame ):
 		bSizer65.Add( self.m_button33, 0, wx.ALL, 5 )
 		
 		
-		bSizer7.Add( bSizer65, 1, wx.EXPAND, 5 )
+		bSizer7.Add( bSizer65, 0, 0, 5 )
 		
 		
-		bSizer5.Add( bSizer7, 0, wx.EXPAND, 5 )
+		bSizer5.Add( bSizer7, 1, wx.EXPAND, 5 )
 		
 		
 		self.SetSizer( bSizer5 )

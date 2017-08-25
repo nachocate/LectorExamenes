@@ -18,7 +18,6 @@ class vPrincipal(mf1.MyFrame1):
 	def __init__(self,parent):
 		mf1.MyFrame1.__init__(self,parent)
 		
-		
 	def cCargarAlumnos( self, event ):
 		print("cargarAlumnos")
 		ventana=vca.vCargarAlumnos(None)
@@ -29,7 +28,6 @@ class vPrincipal(mf1.MyFrame1):
 		print("cGenerarExamenes")
 		ventana=voe.vOpcionesExamenes(None)
 		ventana.Show(True)
-
 		event.Skip()
 	
 	def cCorregirExamenes( self, event ):
@@ -37,6 +35,7 @@ class vPrincipal(mf1.MyFrame1):
 		ventana=vce.vCorregirExamen(None)
 		ventana.Show(True)
 		event.Skip()
+		
 	def cCrearCurso( self, event ):
 		print("cCorregirExamenes")
 		ventana=vcc.vCrearCurso(None)

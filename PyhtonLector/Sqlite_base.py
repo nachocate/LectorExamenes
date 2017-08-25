@@ -48,7 +48,7 @@ class Sqlite_base:
 		#l=c.fetchall()
 		l=c.fetchone()
 		self.conn.commit()
-		return l[0][0]
+		return l[0]
 	def getNombreCurso(self,idal):
 		c = self.conn.cursor()
 		c.execute('select nombre from  Curso where id='+str(idal))
@@ -76,11 +76,22 @@ class Sqlite_base:
 		c = self.conn.cursor()
 		c.execute("select id from Alumno where idCurso="+str(idal))
 		l=c.fetchall()
-		print "ID Alumno"
-		print l
-		print len(l)	
-		self.conn.commit()
-		return l
+		cant=len(l)
+		res=[]
+		print "getIdAlumnoCurso", l
+		if cant>=1:
+			retorno=[]
+			for i in l:
+				retorno.append(i[0])
+			print "ID Alumno"
+			res.append(True)
+			res.append(retorno)
+			self.conn.commit()
+		else:
+			res.append(False)
+			res.append([])
+			self.conn.commit()
+		return res
 	
 	
 	def getDni(self,idal):

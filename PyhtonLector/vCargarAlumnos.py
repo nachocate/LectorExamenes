@@ -35,21 +35,32 @@ class vCargarAlumnos(mf2.MyFrame2):
 		self.m_grid1.SetColLabelValue(0,'Nombre')
 		self.m_grid1.SetColLabelValue(1,'Apellido')
 		self.m_grid1.SetColLabelValue(2,'Dni')
+		
+		
 		self.Refresh(-1)
 		#self.Far=F.Sqlite_Farmacia('Sistema_Farmacias.db')
 		#self.Cargar_Fechas()
 	
 	def Refresh(self,idcat):
+		res=[]
 		if idcat>=0:
-			self.listaId=self.c.getIdAlumnoCurso(idcat)
+			res=self.c.getIdAlumnoCurso(idcat)
+			if res[0]:
+				self.listaId=res[1]
+			else:
+				self.listaId=[]
 		else:
 			self.listaId=[]
 		print self.listaId	
 		if(self.m_grid1.GetNumberRows()!=0):
 			self.m_grid1.DeleteRows(0,self.m_grid1.GetNumberRows(),True)
+		
 		n=len(self.listaId)
+		print "refresh", n
 		if n>0:
 			for i in range(0,n):
+				print "n>0",self.listaId[i]
+				print self.c.getNombre((self.listaId[i]))
 				self.m_grid1.AppendRows(1,False)
 				self.m_grid1.SetCellValue(i,0,self.c.getNombre((self.listaId[i])))
 				self.m_grid1.SetCellValue(i,1,self.c.getApellido((self.listaId[i])))
@@ -70,21 +81,19 @@ class vCargarAlumnos(mf2.MyFrame2):
 		event.Skip()
 	
 	def cCargarAlumnos( self, event ):
-		self.c.del_Alumnos();
 		nom ,ape,dni=ff.loadCSV(self.nombreArchi);
 		print nom,ape,dni
 		print nom[0]
 		
 		#inserto nuevas filas y columnas
 	
+		pos=self.m_choice3.GetSelection()
+		print pos
 		
 		#self.m_grid1.AppendRows(n,False)
 		for i in range(0,len(nom)):
-		#	p=l[i]
-			self.c.ins_Alumno(nom[i],ape[i],dni[i],i+1)
+			self.c.ins_Alumno(nom[i],ape[i],dni[i],self.listaIdCurso[pos])
 		
-		pos=self.m_choice3.GetSelection()
-		print pos
 		self.Refresh(self.listaIdCurso[pos])
 		#m_grid.DeleteRows(0,2)
 		event.Skip()
