@@ -1,0 +1,204 @@
+Cuál/es de los siguientes microorganismos forman parte de la flora normal del ser humano?
+Staphylococcus epidermidis en piel
+Streptococcus viridans en faringe
+Candida en intestino
+Lactobacillus en vagina
+Todas son correctas
+Los siguientes son métodos directos de diagnóstico utilizados en el laboratorio de microbiología excepto:
+Serología IgG o IgM
+Examen microscópico con técnica de Gram
+Detección de DNA por biología molecular
+Identificación por cultivo y antibiograma
+Detección de antígenos (Ej. test rápidos)
+Usted es el médico de cabecera de un paciente de 55 años con diagnóstico clínico de absceso en muslo  de 7 cm de longitud, solicitó hemocultivos y el laboratorio le informa desarrollo en 2 muestras de las 3 que Ud. indicó de gérmenes gran positivos en cadenas catalasa negativo con beta hemólisis. Indique germen más probable y si sospecha germen patógeno o contaminante:
+Staphylococcus epidermidis. Colonizante.
+Staphylococcus epidermidis. Patógeno.
+Enterococcus. Colonizante.
+Staphylococcus aureus. Patógeno.
+Streptococcus pyogenes. Patógeno.
+Paciente de 23 años que consulta por secreción uretral de 48 hs de evolución. Se realiza toma de muestra y el laboratorio informa desarrollo de diplococos positivos oxidasa positiva que no crecen en agar sangre. ¿Cuál es el microorganismo que sospecha y cuál sería su tratamiento empírico?
+Neisseria meningitidis. Ceftriaxone EV
+Moraxella catarrhalis. Amoxicilina clavulánico.
+Moraxella catarrhalis. Ceftriaxone intramuscular.
+Neisseria gonorrhoeae. Ceftriaxone intramuscular + Azitromicina oral
+Neisseria gonorrhoeae. Levofloxacina oral + Estreptomicina intramuscular
+Indique la opción correcta en infecciones por Pseudomonas  aeuruginosa:
+Es un bacilo gran negativo fermentador de glucosa que produce pigmento
+Solo es posible encontrarlo en las manos del personal de salud
+Es un bacilo gran negativo que puede producir infecciones severas y que puede ser resistente a varios antibióticos.
+En el antibiograma se prueban discos de Cefuroxime, Ampicilina, tetraciclinas.
+En el tratamiento empírico inicial  de infecciones severas se deben utilizar aminoglucósidos como monoterapia.
+Señale la respuesta correcta en relación con el proceso de prescripción de un tratamiento antimicrobiano:
+La principal causa de uso irracional de ATB son las infecciones de piel y partes blandas
+Usted debe preguntarse primero si su paciente tiene una enfermedad infecciosa y si requiere o no tratamiento antibiótico.
+La neutropenia febril debe tratarse siempre de inicio por vía oral hasta ver los cultivos.
+En infecciones de etiología predecible de manejo ambulatorio siempre debo solicitar muestra para enviar al laboratorio.
+El lugar de adquisición de la infección no es útil en la sospecha de cuál  es su etiología más probable.
+Marque en que indicación usted indicaría tratamiento ATB combinado
+Neumonía de la comunidad de manejo ambulatorio
+Otitis media aguda bilateral
+Peritonitis bacteriana en paciente con ascitis por Síndrome nefrótico
+Peritonitis aguda  secundaria a apendicitis perforada.
+En todo paciente con Endocarditis.
+Marque la respuesta correcta en relación con tratamiento documentado e intervalo de dosis:
+Debo respetar siempre el tratamiento empírico elegido y continuarlo.
+El antibiótico a seleccionar debe ser el primero de la lista del antibiograma.
+Los ATB con acción bactericida tiempo-dependiente como los B lactámicos requieren en general dosis grandes con intervalos prolongados. 
+ La frecuencia de administración de un antibiótico puede basarse en la experiencia del profesional que lo indica.
+En un diagnóstico documentado debería elegir el tratamiento de espectro dirigido de menor costo y mayor efectividad.
+Marque la afirmación incorrecta:
+En la elección de un antibiótico considero la edad, el sexo, la inmunidad y el estado general del paciente.
+En infecciones neumocóccicas la dosificación del antibiótico según la CIM de la cepa infectante y el sitio de infección está relacionada al éxito del tratamiento.
+Para elegir la vía de indicación de un ATB tengo en cuenta la severidad de la infección, que niveles plasmáticos se requieran, el sitio de infección y el funcionamiento del tracto gastrointestinal.
+Si el paciente está internado siempre debo suministrar el antibiótico por vía endovenosa.
+Puedo indicar ATB intramuscular en infecciones leves/moderadas por bacterias resistentes que requieran ATB con intervalos de dosis prolongados.
+Marque la respuesta correcta en relación con costos de un tratamiento antimicrobiano:
+En los costos directos del tratamiento se tienen en cuenta cuánto cuesta el medicamento, el costo de la internación, el costo de la preparación.
+Costo beneficio significa enumerar y comparar el costo neto de una intervención en salud con los beneficios que surgen como consecuencia de aplicar dicha intervención.
+El análisis de la costo efectividad se utiliza para comparar dos o más medicamentos que no son exactamente equivalentes en términos de dosis o efecto terapéutico, pero que se utilizan para tratar la misma afección
+Ante opciones similares elijo la de menor costo
+Todas son correctas.
+Indique cual de los siguientes antibióticos se excretan principalmente por hígado y deben ajustarse en insuficiencia hepática grave:
+Aminoglucósidos
+Vancomicina
+Rifampicina
+Clindamicina
+3 y 4 son correctas
+Indique cual de los siguientes grupos de antibióticos son tiempo dependiente (“tiempo por encima de la CIM”):
+Quinolonas
+B lactámicos
+Aminoglucósidos
+Glucopéptidos
+Macrólidos
+Marque la opción correcta acerca de conceptos de resistencia antibiótica 
+Es la capacidad de un microorganismo de sobrevivir en presencia del antimicrobiano, a concentraciones fisiológicamente alcanzables.
+La resistencia primaria o natural es la disminución de la sensibilidad innata de ese microorganismo Ej.: P. aeruginosa resistente a TMS
+La resistencia secundaria se origina por selección a partir de una población sensible. Ej.: H. Influenzae resistente a ampicilina
+La resistencia se define por criterios farmacológicos, poblacional, molecular y clínico.
+Todas son correctas
+Cuál de las siguientes es una característica de los B lactámicos:
+Alcanzan buenos niveles intracelulares.
+Inhiben la síntesis proteica y son drogas bacteriostáticas
+Son drogas con múltiples efectos adversos, no se las considera seguras.
+Inhiben la síntesis de la pared celular. Se unen a las PLPs en su mecanismo de acción.
+No atraviesan barrera placentaria por lo que no se pueden utilizar en tratamiento de infecciones en embarazo ni para prevenir transmisión al recién nacido.
+Los siguientes son usos clínicos de las aminopenicilinas con inhibidor de B lactamasas excepto:
+Infecciones respiratorias altas (ej. sinusitis, otitis media agudas)
+Mordeduras de animales
+Otitis supurada crónica
+Pie diabético
+Infecciones intrabdominales: Ej. peritonitis aguda
+Indique la respuesta correcta en relación con Cefalosporinas:
+Las de 3era generación son de elección en infecciones por cocos +
+No se excretan por vía urinaria por lo que no se deben ajustar en insuficiencia renal.
+Las Cefalosporinas de 1era generación no son útiles en infecciones por Enterococo o S. aureus MTR.
+Todas las cefalosporinas de 3era generación tienen espectro para Pseudomonas aeuruginosa.
+Cefepime no puede ser utilizada en infecciones en pacientes quemados.
+Usted decide tratar a su paciente internado en UCI con una droga del grupo Carbapenems. ¿Cuál de las siguientes es correcta con respecto al grupo?
+Inhiben la síntesis proteica y son drogas bacteriostáticas de amplio espectro. No son bien tolerados.
+El compuesto cilastatín es el que le proporciona el Imipenem su amplio espectro.
+Ertapenem tiene vida media larga, se puede administrar por vía IM y por ello es una opción en infecciones severas para tratamiento ambulatorio excepto bacilos gran negativos no fermentadores más importantes.
+Doripenem tiene menor actividad para Pseudomonas  aeuruginosa que el resto. Si el microorganismo es resistente a Imipenem también lo es a Doripenem.
+Se puede asociar Imipenem con un B lactámico sin afectar su respuesta.
+Le avisan desde Farmacia del Hospital que tienen disponible solamente Imipenem dentro de ese grupo de antibióticos. Marque la opción correcta con respecto a  diferencias con Meropenem:
+Meropenem tiene alta incidencia de convulsiones.
+Imipenem puede ser administrado en bolo  o por infusión por lo que es una opción en pacientes con restricción de líquidos. SE puede usar en infusión prolongada.
+Meropenem está unido a cilastatín que inhibe la hidropeptidasa renal que lo inactiva.
+Meropenem no puede ser utilizado en meningitis.
+Imipenem puede producir alteraciones en el SNC, por ejemplo convulsiones especialmente en pacientes con enfermedad neurológica
+Cuál de las siguientes afirmaciones son correctas con respecto a  Vancomicina?
+Pertenece a los glucopéptidos, drogas bactericidas que inhiben la pared celular de cepas sensibles.
+No son droga de primera elección en infecciones por S. aureus meticilino sensibles.
+Se eliminan por vía renal y requieren ajuste de dosis en insuficiencia renal. 
+Los efectos adversos más frecuentes son la nefrotoxicidad. El  síndrome de hombre rojo se produce  cuando se administra la droga en infusión rápida.
+Todas son correctas
+La Vancomicina es una droga ampliamente usada en las unidades de cuidados intensivos. Marca la respuesta correcta con respecto a:
+En meningitis o ventriculitis intranosocomial no puede ser suministrada por vía intraventricular.
+Debe ser incluida en el esquema empírico inicial de neumonías asociadas a respirador en especial si el paciente ha recibido antibióticos dentro de los 3 meses previos al episodio.
+La concentración en valle de la vancomicina debe ser mantenida entre 1-3 microgramo/ml
+No es la droga de primera línea en infecciones del SNC por SAMR.
+En neumonía nosocomial no asociada a ARM no tiene utilidad en ninguna circunstancia. Se deben usar drogas solo para bacilos gran negativos.
+Marque la respuesta correcta con respecto a aminoglucósidos:
+Son drogas concentración dependiente, con efecto post antibiótico, esta cualidad permite la administración una vez por día.
+Se pueden administrar por vía oral o intravenosa.
+El efecto adverso más frecuente son las reacciones de hipersensibilidad.
+Atraviesan la barrera hematoencefálica y se excretan en hígado.
+Actúan eficazmente en ambientes con pH ácido y anaeróbico.
+El médico de planta de la sala en la que usted está rotando le ordena indicarle un macrólido a su  paciente. En su elección usted tendría en cuenta que:
+Son drogas de administración fundamentalmente endovenosa que actúan sobre la síntesis de la pared celular.
+No pueden ser utilizados si el paciente es alérgico a penicilina, por lo que usted debe acordarse preguntárselo al paciente.
+Se utilizan en el tratamiento y prevención de infecciones por Bordetella pertussis.
+Claritromicina y Azitromicina tienen mejor tolerancia oral y son suministradas menos veces al día que Eritromicina.
+3 y 4 son correctas.
+Marque usos terapéuticos de Clindamicina endovenosa:
+Infecciones intrabdominales por su cobertura para anaerobios.
+Tratamiento empírico inicial de infecciones osteoarticulares y infecciones de piel y partes blandas complicada en niños.
+Tratamiento empírico inicial de Pielonefritis.
+Endocarditis por Enterococo.
+1 y 2 son correctas
+Las siguientes son afirmaciones correctas con respecto a Rifampicina excepto:
+Puede ser administrada por vía oral o EV y se excreta por vía renal y en heces.
+Es una opción de  tratamiento adjunto a otro ATB en abscesos profundos  por S. aureus.
+No se recomienda su agregado de rutina a Vancomicina en bacteriemia por SAMR
+Es común que coloree todas las secreciones de pacientes que reciben la droga y se debe controlar la posible toxicidad hepática.
+Se puede utilizar como droga única en pacientes ambulatorios.
+Las quinolonas son un grupo de antibióticos muy usados en pacientes infectados. Marque la respuesta correcta en relación con este grupo:
+Son drogas bacteriostáticas con espectro únicamente para cocos positivos.
+No se recomienda actualmente su uso de primera elección para tratamiento de Gonococo dada la alta prevalencia de resistencia local.
+En niños se aplican las mismas indicaciones que en adultos.
+Levofloxacina no es una quinolona útil en infecciones respiratorias.
+La hepatoxicidad es el afecto adverso más frecuente.
+Usted decide indicar Cotrimoxazol a un niño de 2 años de edad.  Marque la respuesta correcta en relación con esta droga:
+Puede ser administrado por vía oral o endovenosa.
+Se utiliza para prevención y tratamiento de infección pulmonar por Pneumocystis jirovecii en pacientes HIV.
+Es el ATB más frecuentemente indicado en niños de esta edad para completar tratamiento oral de infecciones osteoarticulares por SAMR dada su posología y buena tolerancia.
+1 y 2 son correctas
+1,2 y 3 son correctas
+Marque la respuesta correcta con respecto a los nitroimidazoles:
+El Metronidazol no difunde en LCR.
+Uno de los usos más frecuentes del Metronidazol es en infecciones intrabdominales en esquema combinado  con aminoglucósidos como Gentamicina.
+El benznidazol es un antiparasitario del mismo grupo que se utiliza para tratamiento de guardia y amebas.
+Tiene espectro para cocos positivos aerobios como S. aureus.
+El ornidazol tiene espectro para bacilos gran negativos a diferencia del Metronidazol.
+Con respecto a las nuevas drogas para cocos positivos marque la respuesta correcta:
+Ceftarolina se administra cada 6 horas y está recomendada en meningitis y absceso cerebral por cocos positivos.
+Linezolid no requiere ajuste en insuficiencia renal. Puede producir mielosupresión por lo que debe chequear periódicamente con  hemograma.
+No se recomienda el uso de Daptomicina en neumonía por S. aureus. En esta situación puede ser útil Linezolid.
+Daptomicina es droga bacteriostática por lo que no se recomienda su uso en bacteriemia por S. aureus.
+2 y 3 son correctas.
+El médico residente de 2do año le dice que indique Nitrofurantoína a un paciente con sospecha de infección urinaria. Marque la respuesta correcta con respecto a  ello:
+Es droga bacteriostática que no se recomienda usar en ITU. 
+Pseudomonas aeuruginosa es siempre sensible por lo que es una opción de tratamiento en pielonefritis.
+No se recomienda su uso en pielonefritis o alta sospecha de urosepsis.
+Para profilaxis en pacientes con reflujo vesicoureteral no está recomendada. Se prefiere elegir la droga sensible del último urocultivo positivo.
+Se puede utilizar con seguridad en embarazo, lactancia e insuficiencia renal sin modificar su dosis.
+José de 47 años consultó por tos de 3 semanas de evolución, pérdida de 5 kg de peso, y decaimiento. Usted le solicita baciloscopia para TBC y le informan baciloscopía positiva +++. No tiene antecedentes previos de tratamiento antiTBC. Marque la respuesta correcta con respecto al tratamiento de su tuberculosis pulmonar:
+El esquema inicial es de 3 meses con 2 drogas: isoniacida + rifampicina.
+Le indica tratamiento supervisado en el centro de salud con triple asociación por 2 meses, valorar respuesta y si responde completar con 4 meses de doble asociación.
+Además de la adherencia usted debe controlar si hay toxicidad renal por isoniacida  y hacer baciloscopía a los 15 días de inicio de tratamiento.
+La droga que puede producir síntomas similares a gota es la Rifampicina.
+2 y 3 son correctas
+Las siguientes son indicaciones de antibióticos tópicos excepto:
+Tratamiento de acné y rosácea.
+Profilaxis por colonización nasal de S. epidermidis.
+Profilaxis por colonización nasal de S. aureus.
+Tratamiento de infecciones 2rias a quemaduras
+Tratamiento de otitis externa aguda
+José tiene diagnóstico de TBC pulmonar con baciloscoía positiva. Convive con su pareja Lucía de 30 años, Antonio de 3 años y Lucas de 17 años. Cual de las siguientes es incorrecta con respecto a quimioprofilaxis?
+Le indica Isoniacida a su hijo Antonio por 6 meses.
+Le indica isoniacida a su sobrino de 21 años porque jugaron juntos al fútbol la semana pasada.
+Realiza control clínico (anamnesis y examen físico), PPD y Rx a su pareja, a Antonio y  a Lucas.
+Decide conducta con Lucas y Lucía según valoración clínica y de resultados de PPD y Rx.
+2 y 4 son las respuestas incorrectas.
+Usted recibe en la UCI del Hospital Cullen una paciente de 24 años con clínica de meningoccemia. Luego de estabilizarlo con inotrópicos, asistencia respiratoria y antibiótico hace la historia clínica, realiza la denuncia epidemiológica  y debe decidir si es necesario indicar quimioprofilaxis. Cual de las siguientes afirmaciones es correcta?
+Como es maestra jardinera de una sala de 20 niños de 8 a 14 hs de lunes a viernes  se debe indicar Rifampicina a todos los alumnos de su sala.
+Le indica Rifampicina s su pareja y a su hijo de 15 meses.
+La indicación de Rifampicina es por vía oral y por 48 hs
+2 y 3 son correctas
+Todas son correctas.
+Con respecto a profilaxis quirúrgica, resalta cual de las siguientes afirmaciones es incorrecta.
+Uno de los factores a considerar es la efectividad de la profilaxs en reducir el riesgo de infección de sitio quirúrgico.
+Se considera necesaria en colocación de marcapasos transitorio
+Los ATB de primera elección son los de vida media corta y bajo costo como cefalosporinas de 1era generación.
+Las fracturas expuestas tipo III requieren profilaxis combinada con gentamicina.
+Según la guía SADI amigdalectomía y adenoidectomía no requieren profilaxis antibiótica.

@@ -1,0 +1,296 @@
+ Iniciar cada pregunta con un número correlativo seguido de un paréntesis (Ejemplo: 1).-   2).-   ….)
+
+8.- Iniciar cada respuesta de opción múltiple ( 5 en total) con letras minúsculas seguidas de paréntesis. ( Ejemplo: a), b), c), d), y e) )
+
+9.- Ubicar la respuesta correcta en primer el primer lugar de las opciones ( a) ) y remarcada con amarillo.
+
+10.- Definir de cada pregunta enviada si se evalúa: conocimiento, comprensión, aplicación o análisis. Y también el nivel de dificultad: alta, medio o baja.
+
+REPIRATORIO
+
+Baja (conocimiento)
+1)El cartílago elástico lo podemos encontrar en:
+a) epiglotis, cartílago corniculado y cuneiforme
+b) caras articulares de los huesos
+c) cordón umbilical
+d) cartílagos costales
+e) parte externa de discos intervertebrales
+
+2)Las células madre del epitelio traqueal son las:
+a) Basales
+b) Ciliadas.
+b) Caliciformes.
+c) Endocrinas.
+d) Intermedias.
+e) En cepillo
+
+3)Producen surfactante en los bronquíolos:
+a) Célula de Clara
+b) Neumocitos tipo I
+c) Neumociotos tipo II
+d) Macófagos.
+e) Células musculares.
+
+4)En el alvéolo pulmonar, el surfactante es producido por:
+a) Neumocitos tipo II.
+b) Neumocitos tipo I.
+c) Células musculares
+d) Macrófagos alveolares.
+e) Células de Clara.
+
+5)El epitelio que caracteriza a las vías respiratorias es:
+a) el seudoestratificado cilíndrico ciliado
+b) el biestratificado
+c) el de transición
+d) el estratificado plano
+e) el epitelio glandular
+
+6) La porción conductora o vías aéreas incluye:
+a) fosas nasales y los senos paranasales, la faringe, la laringe, la tráquea y los bronquios
+b) la faringe, la laringe y la traquea
+c) la faringe, la laringe, la traquea y bronquíolos
+d) la faringe, la laringe, la traquea y bronquios
+e) solamente las fosas nasales 
+
+7) El epitelio de la region respiratoria de la cavidad nasal es:
+a) seudoestratificado cilíndrico ciliado con células caliciformes
+b) seudoestratificado sin célula caliciformes
+c) de transición
+d) estratificado plano
+e) epitelio plano, mesotelio
+
+8) La región olfatoria de la cavidad nasal presenta:
+a) epitelio seudoestratificado con células olfatorias, sustentaculares y basales
+b) epitelio seudoestratificado con células olfatorias
+c) epitelio estratificado plano
+d) epitelio bi-estratificado con células sustentaculares 
+e) células caliciformes que descansan sobre una lámina basal
+
+9) La tráquea presenta:
+a) mucosa + submucosa + cartílago + adventicia
+b) mucosa + lámina propia + adventicia
+c) epitelio + lámina propia + músculo
+d) epitelio + submucosa + músculo + cartílago
+e) mucosa + submucosa + cartílago + serosa
+
+10) En la tráquea
+a) la abertura posterior está ocupada por el músculo traqueal
+b) el músculo traqueal es esqueletico estriado
+c) el músculo traqueal se extiende longitudial entre los extremos de los cartílagos
+d) hay mas de 50 cartílagos separados por membrana fibroelástica
+e) su mucosa no presenta MALT
+
+11) El ácino pulmonar
+a) es la unidad funcional del pulmón
+b) es el volumen de tejido pulmonar donde no se ventila
+c) tiene su origen en la bifurcación del bronquiolo respiratorio
+d) es el saco alveolar
+e) es una estructura poligonal separada por un tabique de tejido conectivo
+
+12) Un lobulillo pulmonar
+a) se compone de 3-5 ácinos pulmonares
+b) es sinónimo de ácino pulmonar
+c) se compone de bronquíolo respiratorio + conducto alveolar
+d) se compone de conducto alveolar + atrio
+e) se compone solo de dacos alveolares
+	
+Media (comprensión)
+
+1) En el cartílago elástico encontramos 
+a) fibras colágenas tipo II en mayor cantidad que las elásticas
+b) fibras reticulares
+c) fibrillas de colágeno
+d) solo fibras elásticas
+e) solo fibras reticulares
+
+2) Se entiende por vías aéreas superiores a:
+a) fosas nasales, cavidad bucal y faringe
+b) solamente fosas nasales
+c) fosas nasales, cornetes y cavidad bucal
+d) fosas nasales y cavidad bucal
+e) faringe y laringe
+
+3) Se entiende por vías aéreas inferiores a:
+a) laringe, tráquea y bronquios
+b) faringe, laringe y bronquios
+c) laringe, traquea y bronquíolos
+d) traquea, bronqueos y bronquíolos
+e) bonqueos, bronquíolos y conducto alveolar
+
+4) Las células olfatorias de la región olfatoria de la cavidad nasal son:
+a) neuronas bipolares con una dendrita dirigida hacia la superficie y un axon hacia SNC
+b) células caliciformes
+c) células de sosten
+d) células basales pequeñas
+e) neuronas seudounipolares
+
+5) El MALT (tejido linfatico asosciado a mucosa)
+a) en las vías aéreas se denomina BALT
+b) se encuentra ocacionalmene en las vías aéreas
+c) de tráquea se encuentra en la adventicia
+d) tiene como principal célula al infocito y mastocito
+e) es el lugar donde desembocan las glándulas traqueales
+
+6) En los bronquios
+a) el músculo forma un anillo completo por dentro del cartílago
+b) se observa placas irregulares de cartílago fibroso
+c) las glándulas bronquiales no siguen al cartílago
+d) el epitelio es simple plano
+e) la submucosa desaparece
+
+7) En los bronquíolos
+a) el epitelio es simple cilíndrico con tiene células ciliadas y de Clara
+b) el epitelio es de transición
+c) el epitelio es seudoestratibicado
+d) la placa de cartílago es completa
+e) predominan las células caliciformes
+
+8) Los capilares de la pared alveolar
+a) son capilares de tipo continuo
+b) son capilares de tipo fenestratos
+c) son capilares de tipo sinusoides
+d) son capilares pertenecientes a la irrigación nutricia
+e) son capilares que no pretenecen a la circulación pulmunar
+
+9) El epitelio alveolar
+a) se compone de neumocitos tipo I y tipo II. Tambien se observan macrófagos
+b) se compone de neumocitos tipo I o céluas en tabique
+c) se compone por células cúbicas
+d) se compone en un 90% por neumocitos  tipo II y 10% de macrófagos
+e) se compone de neumocitos tipo II exclusivamente
+
+10) La barrera hematogaseosa se compone de:
+a) célula endotelia + 2 láminas basales con su tejido conectivo + neumocito tipo I
+b) neumocito tipo II solamente
+c) célula endotelia + neumocito tipo I
+d) célula epitelial + tejido conectivo + celula endotelial
+e) neumocito tipo I + neumocito tipoII
+
+11) El diametro promedio de los bronquíolos es:
+a) un milimetro
+b) una micra
+c) un nanometro
+d) un decimetro
+e) un centimetro
+
+12) Componente del tejido conectivo de especial importancia en la función del pulmón:
+a) fibras elásticas
+b) fibras colágenas
+c) líquido intersticial
+d) fibroblastos
+e) sustancia fundamental
+
+
+Alta (aplicación..)
+
+1) Las variaciones etarias del cartílago son:
+a) anillos de la tráquea pueden estar reemplazada por téjido óseo
+b) aumento de tamaño
+c) aumento de proteoglucanos y contenido de agua
+d) se favorece las propiedades mecánicas del cartilago
+e) osificación de los anillos traqueales
+e) no sufre calcificación la matriz cartilaginosa
+
+2) Las  modificaciones en el adulto mayor en la región olfatorias de la cavidad nasal son:
+a) disminución de las celulas olfatorias e incremento de las sustentarulares 
+b) disminución de las celuas basales 
+c) disminución de las celulas sustentaculares
+d) aumento de las neuronas bipolares y aumento del sentido del olfato 
+
+3) En la laringe
+a) el adulto mayor puede tener calcificación de los carílagos hialinos
+b) el cartilago epiglótico es hialino
+c) el epitelio de revestimiento es simple plano
+d) el esqueleto cartilaginoso articular es rígido
+e) los músculos laringeos son todos músculos lisos
+e) aumento de las celulas caliciformes
+c) aumento del sentido del olfato con la edad
+
+4) A la ME el epitelio de la tráquea presenta varios tipos celulares
+
+a) caliciformes, en cepillo, intermedias, basales, endocrinas
+b) linfocitos intracelulares, caliciformes
+c) calicifomes, en cepillo, linfocitos
+d) endocrinas, neuronas (cuerpos neuroepiteliales)
+e) basales, intermedias, en cepillo
+
+5) Las células de Clara
+a) secretan elementos que conforman la sustancia tensioactiva
+b) al final de la espiración ayuda al cierre del bronquíolo
+c) presentan una concavidad en la superficie apical
+d) presentan en membrana apical abundantes cilios
+e) sufren meiosis para regenerar el epitelio bronquiolar
+
+6) En el bronquíolo
+a) la pared muscular es mas gruesa que en el bronquio
+b) el músculo bronquiolar tiene función de sostén
+c) terminale existen alvéolos
+d) respiratorios la ausencia de alvéolos es caracteristico
+e) el epitelio es seudoestratificado cilindrico
+
+7) En total, los bronquíolos respiratorios y los conductos alveolares
+a) representan las últimas 7 generaciones de ramificaciones bronquiales
+b) representan las primeras 7 generaciones de ramificaciones bronquiales
+c) representan las últimas 3 generaciones de ramificaciones bronquiales
+d) representan la última generacion de ramificaciones bronquiales
+e) representan las últimas 10 generaciones de ramificaciones bronquiales
+
+8) La pared alveolar
+a) carece de capilares linfáticos
+b) la ausencia de poros alveolares equilibra la diferencia de presión
+b) es tejido conectivo y epitelio alveolar
+c) es formada por la cara orientada al espacio alveolar
+d) esta revestido por epitelio cilindrico ciliado
+e) es lo suficientemente gruesa para permitir la difusión de gases
+
+9) Sobre el epitelio alveolar se sabe que:
+a) los neumocitos tipo I y II estan unidos por zonulae occludentes
+b) durante la espiración no pueden evitar que la luz del alvéolo colapse
+c) en los cuerpos laminares de sus células se produce fosfolípidos
+d) la maquinaria celular esta representada por REL
+e) tienen la capacidad de fagocitosis
+
+10) A medida que se divide el arbol bronquial
+a) aumenta la proporsión de músculo liso
+b) dismiuye la proporsión de músculo liso
+c) aparece musculo estriado esquelético
+d) desaparece el músculo
+e) aparecen dos capas de músculo liso
+
+
+11) A medida que se divide el arbol bronquial
+a) desaparece el cartílago
+b) aparece el cartílago
+c) se genera un disco continuo de cartílago
+d) la placas de cartílago se fusionan
+e) el cartílago hialino se calcifica
+
+
+12) Los cuerpos laminares de los neumocitos tipo II almacena
+a) fosfolipidos
+b) calcio
+c) carbon
+d) hierro
+e) hemosiderina
+
+13) La cara lingual de la epiglotis tiene epitelio
+a) estratificado plano no queratinizado
+b) simple plano
+c) de transición
+d) simple cúbico
+e) estratificado cilindrico
+
+14) La cara posterior de la epiglotis tiene epitelio
+a) respiratorio
+b) estratificado
+c) biestratificado
+d) simple cúbico
+e) simple plano
+
+
+15) A medida que se divide el árbol bronquial
+a) disminuye el diámentro de la luz
+b) no se modifica el diámetro de la luz
+c) aumenta el diámetro de la luz
+d) no existe relación con el diámentro de la luz
+e) se duplica el diámetro de la luz por cada división

@@ -1,0 +1,82 @@
+1) En adultos el área transversal promedio de la arteria aorta es de 3 cm2, y la velocidad de la sangre circulando por la arteria, en un individuo en reposo, 
+es en promedio de 30 cm/s. El Caudal ó Volumen minuto cardiaco en dicha situación es de:
+a) 90 cm3/s
+b) 10 cm3/s
+c) 270 cm3/s
+d) 900 cm3/s
+e) 30 cm3/s
+
+2) Para mantener a un líquido real en circulación se necesita realizar un trabajo, debido a que existe una cierta resistencia al desplazamiento.
+Dicha resistencia, enunciada en la Ley de Poiseuille, depende de los siguientes factores:
+a) El radio del vaso por donde circula el fluido, la longitud del vaso y la viscosidad del líquido.
+b) La densidad del líquido, la longitud y el radio del vaso.
+c) El radio del vaso y la viscosidad del líquido.
+d) La viscosidad del fluído, la velocidad de circulación y el radio del vaso.
+e) La temperatura del fluido, su viscosidad y el radio del vaso.
+
+3) Durante el ejercicio, el calor producido por la contracción muscular hace que aumente la temperatura corporal. Para termorregular se ponen en juego 
+distintos mecanismos que se explican a continuación:
+a) La evaporación, ya que el agua al evaporarse absorbe a 30ºC 579 cal por gramo, perdiendo así calor hacia el exterior.
+b) La radiación, que es proporcional a la diferencia de temperatura absoluta, perdiendo calor a favor de gradiente.
+c) La convección, que no necesita de materia para transportar el calor, perdiendo calor a pequeñas distancias.
+d) La conducción, que es proporcional a la cuarta potencia de la temperatura absoluta, perdiendo calor por desplazamiento de materia.
+e) La vasocontricción de las arteriolas cutáneas, que aumentan la cantidad de calor que se dirige a la piel.
+
+4) En condiciones fisiológicas el tipo de flujo mayoritario es el denominado flujo laminar. El fluido se desplaza en láminas coaxiales 
+en las que todas las partículas se mueven sin excepción paralelamente al eje vascular. Se origina un perfil parabólico de velocidades, tal que: 
+a) El valor máximo de la velocidad se encuentra en el eje o centro geométrico del tubo.
+b) El valor menor de la velocidad se encuentra en el eje o centro geométrico del tubo.
+c) El valor de la velocidad se mantiene constante para distintas distancias al eje del tubo.
+d) El valor de la velocidad varía sin ninguna tendencia definida.
+e) El valor máximo de la velocidad se encuentra cercano a la pared del tubo.
+
+5) Para poder estimar si un fluido sigue un flujo laminar o turbulento se calcula un número llamado Número de Reynolds.
+Dicho número es directamente proporcional a la densidad del líquido, a la velocidad media y al diámetro del vaso e inversamente proporcional a
+la viscosidad del fluido, indicando:
+a) Número de Reynolds mayores de 3000 flujo turbulento, audible con estetoscopio.
+b) Número de Reynolds mayores de 3000 flujo turbulento, silencioso.
+c) Número de Reynolds mayores de 3000 flujo laminar, silencioso.
+d) Número de Reynolds menores de 1500 flujo laminar, audible con estetoscopio.
+e) Número de Reynolds menores de 1500 flujo turbulento, audible con estetoscopio.
+
+6) La sangre se considera un líquido "No Newtoniano" ya que:
+a) Su viscosidad no permanece constante en las distintas regiones de un tubo líquido.
+b) Su viscosidad premanece constante e independiente de la velocidad.
+c) Su viscosidad es menor que la viscosidad del agua.
+d) Su viscosidad y su densidad permanecen constantes en las distintas regiones de un tubo líquido.
+e) Su densidad no permanece constante en las distintas regiones de un tubo líquido.
+
+7) La pared de los vasos sanguíneos está formada por cantidades variables de fibras musculares lisas, colágenas y elásticas, lo
+que determina la capacidad de deformación y recuperación del vaso. Cada una de estas fibras actúan en:
+a) Las fibras musculares lisas muy importantes para generar la tensión activa de la pared.
+b) Las fibras colágenas muy importantes en la deformación lineal del vaso.
+c) Las fibras elásticas provocando una tensión muy elevada ante pequeños aumentos de radio.
+d) Las fibras elásticas generando la tensión activa de la pared.
+e) Las fibras musculares lisas provocando un tope máximo para el estiramiento.
+
+8) El principal segmento vascular donde se observa un mayor descenso de la presión corresponde al segmento arteriolar,
+debido a que:
+a) Se encuentran los mayores valores de Resistencia.
+b) Se encuentran las arteriolas dispuestas en serie.
+c) Se encuentran en la pared una delgada capa de fibras musculares lisas.
+d) Se encuentran en la pared una delgada capa de fibras elásticas.
+e) Se encuentran los menores valores de Resistencia.
+
+
+
+1) Evalúa aplicación
+Nivel de dificultad baja
+2) Evalúa conocimiento
+Nivel de dificultad baja
+3) Evalúa conocimiento
+Nivel de dificultad medio
+4) Evalúa comprensión
+Nivel de dificultad medio
+3) Evalúa comprensión
+Nivel de dificultad medio
+6) Evalúa conocimiento
+Nivel de dificultad medio
+7) Evalúa análisis
+Nivel de dificultad medio
+8) Evalúa análisis
+Nivel de dificultad medio

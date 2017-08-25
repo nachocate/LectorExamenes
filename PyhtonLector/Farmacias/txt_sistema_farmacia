@@ -1,0 +1,117 @@
+
+create table farmacia(
+	id int PRIMARY KEY not null,
+	nombre varchar(30) not null,
+	direccion varchar(50) not null,
+	telefono varchar(30) null,
+	ciudad vachar(30) null,
+	observaciones varchar(255)  null	
+	);
+
+
+
+
+
+
+insert into farmacia values(1,'Banchio','Irigoyen Freyre 2200','4522268','Santa Fe',' ');
+insert into farmacia values(2,'Belgrano','Rivadavia 3472','4561118','Santa Fe',' ');
+insert into farmacia values(3,'Bonazzola','Av. Freyre 2298','4529098','Santa Fe',' ');
+insert into farmacia values(4,'Bruno','Gral. Paz 5550','4602204','Santa Fe',' ');
+insert into farmacia values(5,'Camilatto','E. Zeballos 2702','4603413','Santa Fe',' ');
+insert into farmacia values(6,'Camusso','4 de Enero 1594','4594678','Santa Fe',' ');
+insert into farmacia values(7,'Costa','Av. Blas Parera 5671','4895215','Santa Fe',' ');
+insert into farmacia values(8,'Fanessi','1ro de Mayo 2899','4539000','Santa Fe',' ');
+insert into farmacia values(9,'Liprandi','Pedro de Vega 725','4602485','Santa Fe',' ');
+insert into farmacia values(10,'Morales','Av. A. del Valle 5642','4696396','Santa Fe',' ');
+insert into farmacia values(11,'Nebiolo','Av. A. del Valle 7781','4609883','Santa Fe',' ');
+insert into farmacia values(12,'Ortiz de Zarate','Av. J. J. Paso 3299','4599865','Santa Fe',' ');
+insert into farmacia values(13,'Pescetti','Padre Genecio 1901','4604447','Santa Fe',' ');
+insert into farmacia values(14,'Wagner','Av. Fcdo. Zuviria 4201','4531215','Santa Fe',' ');
+
+
+
+
+
+
+create table turno(
+	id int PRIMARY KEY not null,
+	nroturno int not null,
+	obs varchar(255) null);
+
+insert into turno values(1,1,'');
+insert into turno values(2,2,'');
+insert into turno values(3,3,'');
+insert into turno values(4,4,'');
+insert into turno values(5,5,'');
+insert into turno values(6,6,'');
+insert into turno values(7,7,'');
+insert into turno values(8,8,'');
+
+
+
+
+
+create table fecha_turno(
+	id int PRIMARY KEY not null,
+	fecha_inicio date not null,
+	fecha_fin date null,
+	horario varchar(30),
+	id_turno int not null);
+
+
+insert into fecha_turno values(1,'10-12-2014','11-12-2014','De 8 hs a 8 hs',1);
+insert into fecha_turno values(2,'21-12-2014','22-12-2014','De 8 hs a 8 hs',1);
+
+
+insert into fecha_turno values(3,'30-11-2014','1-12-2014','De 8 hs a 8 hs',2);
+insert into fecha_turno values(4,'11-12-2014','12-12-2014','De 8 hs a 8 hs',2);
+insert into fecha_turno values(5,'22-12-2014','23-12-2014','De 8 hs a 8 hs',2);
+
+
+insert into fecha_turno values(6,'31-11-2014','1-12-2014','De 8 hs a 8 hs',3);
+insert into fecha_turno values(7,'12-12-2014','12-12-2014','De 8 hs a 8 hs',3);
+insert into fecha_turno values(8,'23-12-2014','23-12-2014','De 8 hs a 8 hs',3);
+
+
+
+
+
+create table grupo(
+	id int PRIMARY KEY not null,
+	id_farmacia int not null,
+	id_turno int not null
+);
+
+
+
+insert into grupo values(1,2,1);
+insert into grupo values(2,4,1);
+insert into grupo values(3,6,1);
+
+
+insert into grupo values(4,1,2);
+insert into grupo values(5,3,2);
+insert into grupo values(6,5,2);
+
+
+
+insert into grupo values(7,1,3);
+insert into grupo values(8,2,3);
+insert into grupo values(9,3,3);
+insert into grupo values(10,5,3);
+insert into grupo values(11,7,3);
+
+
+
+
+
+
+	
+select F.id, F.nombre,F.direccion,F.telefono  from fecha_turno R inner join turno T on T.id=R.id_turno  inner join grupo G on  G.id_turno = T.id  inner join farmacia F on F.id= G.id_farmacia where fecha_inicio='10-12-2014';
+			
+
+
+
+
+
+

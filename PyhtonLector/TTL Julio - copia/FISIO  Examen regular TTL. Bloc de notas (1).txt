@@ -1,0 +1,107 @@
+1) Un electrocardiograma:
+a) Es un registro gráfico de ondas de la actividad eléctrica del corazón
+b) Es un estudio que permite cuantificar la fracción de eyección ventricular izquierda
+c) Consiste en un estudio que grafica las presiones que existen dentro de las cámaras cardíacas 
+d) Es un estudio invasivo para el paciente
+e) Requiere que el paciente esté en ayunas para su realización
+
+2) Para calcular el eje eléctrico del corazón, ¿qué derivaciones elegirías?
+a) DI y avF
+b) DI y avL
+c) DII y avR
+d) DI
+e) avR y avL
+
+3) La repolarización auricular normalmente ocurre durante:
+a) El complejo QRS
+b) La onda P
+c) El segmento ST
+d) La onda T
+e) El período isoeléctrico
+
+4) Las derivaciones precordiales (o del plano horizontal) son: 
+a) V1, V2, V3, V4, V5, V6
+b) avR, DI, DII
+c) DI, DII y DIII
+d) avL, DII y DIII
+e) DI, avL y avF
+
+5) En la representación gráfica de los cambios de presión y volumen en el ventrículo izquierdo durante el ciclo cardíaco, el área de la curva representa:
+a)el trabajo externo del corazón
+b)el gasto cardíaco
+c)el trabajo interno del corazón
+d)la presión de perfusión
+e)la contractilidad cardiovascular
+
+6)  En relación al ciclo cardíaco,  la precarga es: 
+a) la tensión que va a elongar al músculo en diástole, antes del comienzo de su actividad contráctil.
+b) la tensión mínima que deberá alcanzar el músculo cardíaco para luego acortarse.
+c) la máxima fuerza que ocurre después de la apertura de válvula sigmoidea y antes del pico máximo de presión intraventricular.
+d) la fuerza por unidad de superficie que según Ley de Laplace será menor a mayor radio.
+e) la máxima  caída de presión dentro del ventrículo izquierdo al abrirse la válvula áortica.
+
+
+7) A nivel de la microcirculación:
+a)El músculo liso de las arteriolas tiene la capacidad de modular su tono para regular el flujo capilar de acuerdo a las necesidades del tejido.
+b)En los capilares (según ley de continuidad), el área transversal es pequeña.
+c)El óxido nítrico es un potente vasocontrictor liberado a nivel local.
+d)La presión atmosférica del intersticio es una fuerza de relevancia para el intercambio de sustancias a nivel capilar.
+e)Las paredes capilares están formadas por epitelio estratificado con uniones selladas entre células.
+
+8) El estímulo de presorreceptores de alta presión, por un incremento de la presión arterial  desencadenará un:
+
+a)aumento de las descargas del sistema parasimpático
+b)aumento contractilidad del miocardio
+c)aumento de la frecuencia cardiaca
+d)aumento de la presión sanguínea sistémica
+e)estimulación del centro vasomotor
+
+9) En la sístole ventricular las válvulas A-V están cerradas y la sangre sale:
+a)Por las Arterias Pulmonares y la Aorta
+b)Por la Arteria Pulmonar
+c)Por la Arteria Pulmonar y las Venas Pulmonares 
+d)Por la Arteria Aorta
+e)Por las venas pulmonares
+
+10) La función de las arterias musculares es:
+a)La regulación de la presión sanguínea
+b)La conducción del flujo venoso
+c)La distribución del flujo sanguíneo
+d)La regulación de la temperatura corporal
+e)La regulación de la volemia
+
+11) La función más importante de la microcirculación es:
+a) el intercambio de nutrientes y productos de deshecho entre la sangre y los tejidos.
+b) la filtración de agua a través de los capilares, con exceso en el espacio intersticial.
+c) la regulación de la resistencia vascular.
+d) la regulación de las presiones coloidosmóticas intracelulares.
+e) el mantenimiento de un flujo de sangre constante en el cerebro con presiones constantes.
+
+
+12) El surfactante pulmonar: 
+a)Favorece la estabilidad alveolar
+b)Aumenta el trabajo respiratorio
+c)Se mantiene a una concentración constante en cada alvéolo
+d)Aumenta la tensión superficial  alveolar
+e)Favorece el incremento de la presión alveolar
+
+13)  Dentro de la Ventilación Pulmonar, cuál es el significado de Espacio Muerto Fisiológico?
+a) Aire que no llega a realizar el intercambio gaseoso y generalmente coincide con el espacio muerto anatómico.
+b) Aire que no llega a tener intercambio gaseoso, mucho mayor que el espacio muerto anatómico y alvéolos ocupados.
+c) Aire con intercambio gaseoso,  en alvéolos, se resta a espacio muerto Anatómico. 
+d) Aire que no llega a intercambio gaseoso, en una inspiración forzada con espiración normal.
+e) Aire que queda en los pulmones después de una espiración forzada.
+
+14) La respuesta inmediata al estrés ocasiona:
+a)Aumento de la frecuencia y de la fuerza de contracción cardíaca
+b)Disminución de la glucemia
+c)Mantenimiento del  flujo sanguíneo en el músculo esquelético 
+d)Disminución del número de eritrocitos circulantes
+e)Disminución de la capacidad respiratoria
+
+15) En cuál  de las fases del Síndrome General de Adaptación  (estrés) hay activación simpática por estimulación del sistema límbico? 
+a) Fase de resistencia donde el estímulo es más prolongado o se repite intermitentemente. 
+b) Fase de alarma, inmediata a la percepción del estímulo.
+c) Fase de colapso o agotamiento, por estímulo continuo con agotamiento de los recursos. 
+d) Fase de congelamiento o paralización con  excitación de la sustancia gris periacuaductal.
+e) Fase de colapso, el organismo pierde su capacidad de adaptación. 

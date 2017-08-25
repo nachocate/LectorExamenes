@@ -1,0 +1,3 @@
+Categoria1
+Categoria2
+Categoria3
