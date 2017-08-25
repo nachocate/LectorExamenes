@@ -27,6 +27,16 @@ class Sqlite_base:
 			ret.append(i[0])
 		self.conn.commit()
 		return ret
+	
+	def getIdCategoria(self):
+		c = self.conn.cursor()
+		c.execute("select id from Categoria")
+		l=c.fetchall()
+		ret=[]
+		for i in l:
+			ret.append(i[0])
+		self.conn.commit()
+		return ret
 	def getCurso(self,id):
 		c = self.conn.cursor()
 		c.execute("select nombre from Curso where id="+str(id))
@@ -52,6 +62,14 @@ class Sqlite_base:
 	def getNombreCurso(self,idal):
 		c = self.conn.cursor()
 		c.execute('select nombre from  Curso where id='+str(idal))
+		l=c.fetchall()
+		#l=c.fetchone()
+		self.conn.commit()
+		return l[0][0]
+	
+	def getNombreCategoria(self,idal):
+		c = self.conn.cursor()
+		c.execute('select nombre from  Categoria where id='+str(idal))
 		l=c.fetchall()
 		#l=c.fetchone()
 		self.conn.commit()

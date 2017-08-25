@@ -7403,7 +7403,7 @@
                 </object>
             </object>
         </object>
-        <object class="Frame" expanded="0">
+        <object class="Frame" expanded="1">
             <property name="aui_managed">0</property>
             <property name="aui_manager_style">wxAUI_MGR_DEFAULT</property>
             <property name="bg"></property>
@@ -7421,7 +7421,7 @@
             <property name="minimum_size"></property>
             <property name="name">MyFrame8</property>
             <property name="pos"></property>
-            <property name="size">622,345</property>
+            <property name="size">642,380</property>
             <property name="style">wxDEFAULT_FRAME_STYLE</property>
             <property name="subclass"></property>
             <property name="title"></property>
@@ -7465,7 +7465,7 @@
             <event name="OnSetFocus"></event>
             <event name="OnSize"></event>
             <event name="OnUpdateUI"></event>
-            <object class="wxBoxSizer" expanded="0">
+            <object class="wxBoxSizer" expanded="1">
                 <property name="minimum_size"></property>
                 <property name="name">bSizer52</property>
                 <property name="orient">wxVERTICAL</property>
@@ -7741,19 +7741,19 @@
                         </object>
                     </object>
                 </object>
-                <object class="sizeritem" expanded="0">
+                <object class="sizeritem" expanded="1">
                     <property name="border">5</property>
-                    <property name="flag">wxEXPAND</property>
-                    <property name="proportion">0</property>
-                    <object class="wxBoxSizer" expanded="0">
+                    <property name="flag"></property>
+                    <property name="proportion">1</property>
+                    <object class="wxBoxSizer" expanded="1">
                         <property name="minimum_size"></property>
                         <property name="name">bSizer57</property>
                         <property name="orient">wxHORIZONTAL</property>
                         <property name="permission">none</property>
                         <object class="sizeritem" expanded="0">
                             <property name="border">5</property>
-                            <property name="flag">wxEXPAND</property>
-                            <property name="proportion">1</property>
+                            <property name="flag"></property>
+                            <property name="proportion">0</property>
                             <object class="wxBoxSizer" expanded="0">
                                 <property name="minimum_size"></property>
                                 <property name="name">bSizer68</property>
@@ -7761,7 +7761,7 @@
                                 <property name="permission">none</property>
                                 <object class="sizeritem" expanded="0">
                                     <property name="border">5</property>
-                                    <property name="flag">wxALL|wxEXPAND</property>
+                                    <property name="flag">wxALL</property>
                                     <property name="proportion">0</property>
                                     <object class="wxGrid" expanded="0">
                                         <property name="BottomDockable">1</property>
@@ -7789,7 +7789,7 @@
                                         <property name="col_label_size">30</property>
                                         <property name="col_label_values"></property>
                                         <property name="col_label_vert_alignment">wxALIGN_CENTRE</property>
-                                        <property name="cols">5</property>
+                                        <property name="cols">2</property>
                                         <property name="column_sizes"></property>
                                         <property name="context_help"></property>
                                         <property name="context_menu">1</property>
@@ -7814,8 +7814,8 @@
                                         <property name="label_bg"></property>
                                         <property name="label_font"></property>
                                         <property name="label_text"></property>
-                                        <property name="margin_height">0</property>
-                                        <property name="margin_width">0</property>
+                                        <property name="margin_height">10</property>
+                                        <property name="margin_width">10</property>
                                         <property name="max_size"></property>
                                         <property name="maximize_button">0</property>
                                         <property name="maximum_size"></property>
@@ -7906,7 +7906,7 @@
                         </object>
                         <object class="sizeritem" expanded="0">
                             <property name="border">5</property>
-                            <property name="flag">wxEXPAND</property>
+                            <property name="flag"></property>
                             <property name="proportion">1</property>
                             <object class="wxBoxSizer" expanded="0">
                                 <property name="minimum_size"></property>

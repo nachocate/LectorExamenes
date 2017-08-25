@@ -17,38 +17,41 @@ class vCargarCategorias(mf8.MyFrame8):
 		self.c=sqlb.Sqlite_base('base.db')
 		#initialize parent class
 		mf8.MyFrame8.__init__(self,parent)
-		#m_grid3
-		#self.m_textCtrl2self.m_grid2.Show(True)
-		self.m_grid8.DeleteCols(0,self.m_grid8.GetNumberCols(),True)
-		self.m_grid8.DeleteRows(0,self.m_grid8.GetNumberRows(),True)
 		#inserto nuevas filas y columnas
-	
-		self.m_grid8.AppendCols(2,False)
+		#self.m_grid8.DeleteCols(self.m_grid8.GetNumberRows(),False)
+		#self.m_grid8.AppendCols(2,False)
 		self.m_grid8.SetColSize(0,120)
-		self.m_grid8.SetColSize(1,150)
-				
+		self.m_grid8.SetColSize(1,150)		
 		self.m_grid8.SetColLabelValue(0,'Id')
 		self.m_grid8.SetColLabelValue(1,'Nombre Categoria')
-		self.m_grid8.Show(False)
+		self.Refresh()
+		
+	def Refresh(self):
+		self.listaId=[]
+		self.listaId=self.c.getIdCategoria()	
+		if(self.m_grid8.GetNumberRows()!=0):
+			self.m_grid8.DeleteRows(0,self.m_grid8.GetNumberRows(),True)
+		
+		n=len(self.listaId)
+		print "refresh", n
+		if n>0:
+			for i in range(0,n):
+				print "n>0",self.listaId[i]
+				print self.c.getNombreCategoria((self.listaId[i]))
+				self.m_grid8.AppendRows(1,False)
+				self.m_grid8.SetCellValue(i,0,str(i))
+				self.m_grid8.SetCellValue(i,1,self.c.getNombreCategoria((self.listaId[i])))
+	
 		
 	def bCargar( self, event ):
-		self.c.del_Categoria()
-		self.m_grid8.Show(True)
+		#self.c.del_Categoria()
 		path=self.m_filePicker3.GetPath()
 		self.nombreArchi=path
 		self.c.del_Alumnos();
 		nom=ff.loadCSVCategoria(self.nombreArchi);
-		print nom
-		#self.m_grid8.DeleteCols(0,self.m_grid8.GetNumberCols(),True)
-		#self.m_grid8.DeleteRows(0,self.m_grid8.GetNumberRows(),True)
-		#inserto nuevas filas y columnas
-	
-		self.m_grid8.AppendRows(len(nom),False)
 		for i in range(0,len(nom)):
-		#	p=l[i]
 			self.c.ins_Categoria(nom[i],i+1)
-			self.m_grid8.SetCellValue(i,0,str(i+1))
-			self.m_grid8.SetCellValue(i,1,nom[i])
+		self.Refresh()
 		event.Skip()
 		
 	def bGuardar( self, event ):

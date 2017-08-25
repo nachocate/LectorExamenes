@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 
 ###########################################################################
-## Python code generated with wxFormBuilder (version Jul  7 2017)
+## Python code generated with wxFormBuilder (version Dec 21 2016)
 ## http://www.wxformbuilder.org/
 ##
 ## PLEASE DO "NOT" EDIT THIS FILE!
@@ -18,7 +18,7 @@ import wx.grid
 class MyFrame8 ( wx.Frame ):
 	
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 622,345 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 642,380 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 		
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 		
@@ -46,11 +46,11 @@ class MyFrame8 ( wx.Frame ):
 		self.m_grid8 = wx.grid.Grid( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
 		
 		# Grid
-		self.m_grid8.CreateGrid( 5, 5 )
+		self.m_grid8.CreateGrid( 5, 2 )
 		self.m_grid8.EnableEditing( True )
 		self.m_grid8.EnableGridLines( True )
 		self.m_grid8.EnableDragGridSize( False )
-		self.m_grid8.SetMargins( 0, 0 )
+		self.m_grid8.SetMargins( 10, 10 )
 		
 		# Columns
 		self.m_grid8.EnableDragColMove( False )
@@ -67,10 +67,10 @@ class MyFrame8 ( wx.Frame ):
 		
 		# Cell Defaults
 		self.m_grid8.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
-		bSizer68.Add( self.m_grid8, 0, wx.ALL|wx.EXPAND, 5 )
+		bSizer68.Add( self.m_grid8, 0, wx.ALL, 5 )
 		
 		
-		bSizer57.Add( bSizer68, 1, wx.EXPAND, 5 )
+		bSizer57.Add( bSizer68, 0, 0, 5 )
 		
 		bSizer69 = wx.BoxSizer( wx.VERTICAL )
 		
@@ -78,10 +78,10 @@ class MyFrame8 ( wx.Frame ):
 		bSizer69.Add( self.m_button34, 0, wx.ALL, 5 )
 		
 		
-		bSizer57.Add( bSizer69, 1, wx.EXPAND, 5 )
+		bSizer57.Add( bSizer69, 1, 0, 5 )
 		
 		
-		bSizer52.Add( bSizer57, 0, wx.EXPAND, 5 )
+		bSizer52.Add( bSizer57, 1, 0, 5 )
 		
 		bSizer58 = wx.BoxSizer( wx.HORIZONTAL )
 		
