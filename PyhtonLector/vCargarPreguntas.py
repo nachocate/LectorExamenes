@@ -22,63 +22,59 @@ class vCargarPreguntas(mf5.MyFrame5):
 		self.m_grid4.DeleteCols(0,self.m_grid4.GetNumberCols(),True)
 		self.m_grid4.DeleteRows(0,self.m_grid4.GetNumberRows(),True)
 		#inserto nuevas filas y columnas
-	
 		self.m_grid4.AppendCols(2,False)
 		self.m_grid4.SetColSize(0,120)
-		self.m_grid4.SetColSize(1,150)
-				
+		self.m_grid4.SetColSize(1,150)				
 		self.m_grid4.SetColLabelValue(0,'Nombre Categoria')
-		self.m_grid4.SetColLabelValue(0,'Cantidad de Preguntas ')
-		self.m_grid4.Show(False)
-		#self.m_choice1=wx.Choice( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize,["hola"], 0 )
-		self.idsCat=self.c.get_IdsCategoria()
+		self.m_grid4.SetColLabelValue(1,'Cantidad de Preguntas ')
+		[val,self.idsCat]=self.c.getIdCategoria()
 		lista=[]
 		for i in self.idsCat:
 			lista.append(self.c.get_NombreCategoria(i))
 		self.m_choice1.AppendItems(lista)
-		#self.m_choice1.Create(self, parent,["gika","gika","gika"])
-		#for i in range(0,5):
-		#	self.m_choice1.SetString(i,"hola")
+		self.Refresh()
 		
+	def Refresh(self):
+		print "llego"
+		if(self.m_grid4.GetNumberRows()>0):
+			self.m_grid4.DeleteRows(0,self.m_grid4.GetNumberRows(),True)
+		
+		[val,self.idsCat]=self.c.getIdCategoria()
+		n=len(self.idsCat)
+		for i in range(0,n):
+			[valor,d1]=self.c.getCantPregCategoria((self.idsCat[i]))
+			if(valor):
+				self.m_grid4.AppendRows(1,False)
+				print self.c.getNombreCategoria((self.idsCat[i])),str(d1[0]),str(i)
+				self.m_grid4.SetCellValue(self.m_grid4.GetNumberRows()-1,0,self.c.getNombreCategoria((self.idsCat[i])))
+				self.m_grid4.SetCellValue(self.m_grid4.GetNumberRows()-1,1,str(d1[0]))
+					
 		
 	def bCargar( self, event ):
 		cat_select=self.m_choice1.GetCurrentSelection()
 		idSeleccionado=self.idsCat[cat_select]
-		print idSeleccionado
-		self.m_grid4.Show(True)
 		path=self.m_filePicker2.GetPath()
 		self.nombreArchi=path
 		Mat=ff.leerPreguntasFijas(self.nombreArchi)
-		#self.m_grid4.AppendRows(len(self.idsCat),False)
 		cont=1;
 		contres=1;
 		print "longitud Mat: "+str(len(Mat)/6)
 		for i in range(0,len(Mat),6):
-			#self.m_grid4.AppendRows(1,False)
-			self.c.ins_Pregunta(Mat[i],self.idPreg,idSeleccionado)
-			self.c.ins_Respuesta(Mat[i+1],self.idRes,self.idPreg,1)
-			self.idRes=self.idRes+1
-			self.c.ins_Respuesta(Mat[i+2],self.idRes,self.idPreg,0)
-			self.idRes=self.idRes+1
-			self.c.ins_Respuesta(Mat[i+3],self.idRes,self.idPreg,0)
-			self.idRes=self.idRes+1
-			self.c.ins_Respuesta(Mat[i+4],self.idRes,self.idPreg,0)
-			self.idRes=self.idRes+1
-			self.c.ins_Respuesta(Mat[i+5],self.idRes,self.idPreg,0)
-			self.idRes=self.idRes+1
-			self.idPreg=self.idPreg+1
-		self.m_grid4.AppendRows(1,False)
-		self.m_grid4.SetCellValue(self.m_grid4.GetNumberRows()-1,0,self.c.get_NombreCategoria(idSeleccionado))
-		self.m_grid4.SetCellValue(self.m_grid4.GetNumberRows()-1,1,str(len(Mat)/6))
-		
+			self.c.ins_Pregunta(Mat[i],idSeleccionado)
+			idPreg=self.c.getMaxIdPregunta()
+			pos=1
+			self.c.ins_Respuesta(Mat[i+1],pos,idPreg,1)
+			self.c.ins_Respuesta(Mat[i+2],pos+1,idPreg,0)
+			self.c.ins_Respuesta(Mat[i+3],pos+2,idPreg,0)
+			self.c.ins_Respuesta(Mat[i+4],pos+3,idPreg,0)
+			self.c.ins_Respuesta(Mat[i+5],pos+4,idPreg,0)	
 		event.Skip()
+		self.Refresh()
 	
 	def bAcepatar( self, event ):
 		event.Skip()
 	
 	def bCancelar( self, event ):
-		self.c.del_Respuestas()
-		self.c.del_Preguntas()
 		event.Skip()
 	
 		

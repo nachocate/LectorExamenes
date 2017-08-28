@@ -36,7 +36,10 @@ class Sqlite_base:
 		for i in l:
 			ret.append(i[0])
 		self.conn.commit()
-		return ret
+		if len(ret)==0:
+			return [False, []]
+		else:
+			return [True,ret]
 	def getCurso(self,id):
 		c = self.conn.cursor()
 		c.execute("select nombre from Curso where id="+str(id))
@@ -110,6 +113,49 @@ class Sqlite_base:
 			res.append([])
 			self.conn.commit()
 		return res
+	
+	def getIdPregunta(self,idal):
+		c = self.conn.cursor()
+		c.execute("select id from Pregunta where idCategoria="+str(idal))
+		l=c.fetchall()
+		cant=len(l)
+		res=[]
+		print "getIdPregunta", l
+		if cant>=1:
+			retorno=[]
+			for i in l:
+				retorno.append(i[0])
+			print "ID Alumno"
+			res.append(True)
+			res.append(retorno)
+			self.conn.commit()
+		else:
+			res.append(False)
+			res.append([])
+			self.conn.commit()
+		return res
+	
+	def getCantPregCategoria(self,idal):
+		c = self.conn.cursor()
+		c.execute("select count(id) from Pregunta where idCategoria="+str(idal)+" group by idCategoria")
+		l=c.fetchall()
+		cant=len(l)
+		res=[]
+		print "getIdPregunta", l
+		if cant>=1:
+			retorno=[]
+			for i in l:
+				retorno.append(i[0])
+			print "ID Alumno"
+			res.append(True)
+			res.append(retorno)
+			self.conn.commit()
+		else:
+			res.append(False)
+			res.append([])
+			self.conn.commit()
+		return res
+	
 	
 	
 	def getDni(self,idal):
@@ -202,25 +248,29 @@ class Sqlite_base:
 		#l=c.fetchone()
 		self.conn.commit()
 		return True
-	def getMaxIdAlumno():
+	def getMaxIdAlumno(self):
+		c = self.conn.cursor()
 		c.execute("SELECT  CASE WHEN max( id)  IS NULL THEN 0 ELSE max( id)  END 'max' FROM Alumno")
 		#l=c.fetchall()
 		l=c.fetchone()
 		self.conn.commit()
 		return l[0]
-	def getMaxIdPregunta():
-		c.execute("SELECT  CASE WHEN max( id)  IS NULL THEN 0 ELSE max( id)  END 'max' FROM Pregunta")
+	def getMaxIdPregunta(self):
+		c = self.conn.cursor()
+		c.execute("SELECT  CASE WHEN max(id)  IS NULL THEN 0 ELSE max(id)  END 'max' FROM Pregunta")
 		#l=c.fetchall()
 		l=c.fetchone()
 		self.conn.commit()
 		return l[0]
-	def getMaxIdRespuesta():
+	def getMaxIdRespuesta(self):
+		c = self.conn.cursor()
 		c.execute("SELECT  CASE WHEN max( id)  IS NULL THEN 0 ELSE max( id)  END 'max' FROM Respuesta")
 		#l=c.fetchall()
 		l=c.fetchone()
 		self.conn.commit()
 		return l[0]	
-	def getMaxIdExamen():
+	def getMaxIdExamen(self):
+		c = self.conn.cursor()
 		c.execute("SELECT  CASE WHEN max( id)  IS NULL THEN 0 ELSE max( id)  END 'max' FROM Examen")
 		#l=c.fetchall()
 		l=c.fetchone()
