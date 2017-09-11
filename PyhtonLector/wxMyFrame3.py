@@ -133,6 +133,7 @@ class MyFrame3 ( wx.Frame ):
 		self.Centre( wx.BOTH )
 		
 		# Connect Events
+		self.m_choice4.Bind( wx.EVT_CHOICE, self.cSeleccionarCurso )
 		self.m_dirPicker1.Bind( wx.EVT_DIRPICKER_CHANGED, self.cDirectorioExamenes )
 		self.m_button5.Bind( wx.EVT_BUTTON, self.cCargarExamenes )
 		self.m_button7.Bind( wx.EVT_BUTTON, self.cCorregirExamenes )
@@ -158,5 +159,8 @@ class MyFrame3 ( wx.Frame ):
 	
 	def cExportarExamenes( self, event ):
 		event.Skip()
-	
+
+	def cSeleccionarCurso( self, event ):
+		event.Skip()
+
 

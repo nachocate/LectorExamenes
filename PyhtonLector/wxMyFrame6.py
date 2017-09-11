@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 
 ###########################################################################
-## Python code generated with wxFormBuilder (version Jul  7 2017)
+## Python code generated with wxFormBuilder (version Dec 21 2016)
 ## http://www.wxformbuilder.org/
 ##
 ## PLEASE DO "NOT" EDIT THIS FILE!
@@ -18,7 +18,7 @@ import wx.grid
 class MyFrame6 ( wx.Frame ):
 	
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 1311,800 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 1311,682 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 		
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 		
@@ -45,7 +45,7 @@ class MyFrame6 ( wx.Frame ):
 		m_choice5Choices = []
 		self.m_choice5 = wx.Choice( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_choice5Choices, 0 )
 		self.m_choice5.SetSelection( 0 )
-		bSizer67.Add( self.m_choice5, 1, wx.ALL, 5 )
+		bSizer67.Add( self.m_choice5, 0, wx.ALL, 5 )
 		
 		
 		bSizer27.Add( bSizer67, 0, wx.EXPAND, 5 )
@@ -59,7 +59,7 @@ class MyFrame6 ( wx.Frame ):
 		m_choice2Choices = []
 		self.m_choice2 = wx.Choice( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_choice2Choices, 0 )
 		self.m_choice2.SetSelection( 0 )
-		bSizer29.Add( self.m_choice2, 1, wx.ALL, 5 )
+		bSizer29.Add( self.m_choice2, 0, wx.ALL, 5 )
 		
 		self.m_staticText11 = wx.StaticText( self, wx.ID_ANY, u"Cantidad de Preguntas", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText11.Wrap( -1 )
@@ -81,11 +81,11 @@ class MyFrame6 ( wx.Frame ):
 		self.m_grid5 = wx.grid.Grid( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
 		
 		# Grid
-		self.m_grid5.CreateGrid( 5, 5 )
+		self.m_grid5.CreateGrid( 1, 5 )
 		self.m_grid5.EnableEditing( True )
 		self.m_grid5.EnableGridLines( True )
 		self.m_grid5.EnableDragGridSize( False )
-		self.m_grid5.SetMargins( 0, 0 )
+		self.m_grid5.SetMargins( 20, 100 )
 		
 		# Columns
 		self.m_grid5.EnableDragColMove( False )
@@ -105,7 +105,7 @@ class MyFrame6 ( wx.Frame ):
 		bSizer40.Add( self.m_grid5, 0, wx.ALL|wx.EXPAND, 5 )
 		
 		
-		bSizer30.Add( bSizer40, 1, 0, 5 )
+		bSizer30.Add( bSizer40, 0, wx.EXPAND, 5 )
 		
 		bSizer41 = wx.BoxSizer( wx.VERTICAL )
 		
@@ -147,11 +147,11 @@ class MyFrame6 ( wx.Frame ):
 		self.m_grid6 = wx.grid.Grid( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
 		
 		# Grid
-		self.m_grid6.CreateGrid( 5, 6 )
+		self.m_grid6.CreateGrid( 1, 6 )
 		self.m_grid6.EnableEditing( True )
 		self.m_grid6.EnableGridLines( True )
 		self.m_grid6.EnableDragGridSize( False )
-		self.m_grid6.SetMargins( 0, 0 )
+		self.m_grid6.SetMargins( 0, 100 )
 		
 		# Columns
 		self.m_grid6.EnableDragColMove( False )
@@ -255,7 +255,7 @@ class MyFrame6 ( wx.Frame ):
 		bSizer37.Add( self.m_staticText16, 0, wx.ALL, 5 )
 		
 		self.m_dirPicker2 = wx.DirPickerCtrl( self, wx.ID_ANY, wx.EmptyString, u"Select a folder", wx.DefaultPosition, wx.DefaultSize, wx.DIRP_DEFAULT_STYLE )
-		bSizer37.Add( self.m_dirPicker2, 1, wx.ALL, 5 )
+		bSizer37.Add( self.m_dirPicker2, 0, wx.ALL, 5 )
 		
 		
 		bSizer27.Add( bSizer37, 0, wx.EXPAND, 5 )

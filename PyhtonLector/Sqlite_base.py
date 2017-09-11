@@ -194,8 +194,17 @@ class Sqlite_base:
 			ret.append(i[0])
 		self.conn.commit()
 		return ret
-	
-	
+	def getRespuestaPreguntaCompuesta(self,idPre):
+		c = self.conn.cursor()
+		c.execute("select r.id,r.respuesta, r.pos,r.verdadera from Respuesta r inner join Pregunta p on p.id=r.idPregunta where p.id="+str(idPre))
+		l=c.fetchall()
+		return l
+	def getExamenFisicoCompuesto(self,idExa):
+		c = self.conn.cursor()
+		c.execute("select idPregunta,idsRespuestas,posCorrecta from ExamenFisico where idExamen="+str(idExa))
+		l=c.fetchall()
+		return l
+		
 	def set_Nota(self,idal,nota):
 		c = self.conn.cursor()
 		c.execute('update Alumno set nota='+str(nota)+' where id='+str(idal))
@@ -203,9 +212,9 @@ class Sqlite_base:
 		#l=c.fetchone()
 		self.conn.commit()
 		return True
-	def AddExamenFisico(self,idExamen,idPregunta,vecIdsRtas,pos):
+	def AddExamenFisico(self,idExamen,idPregunta,vecIdsRtas,pos,idCurso):
 		c = self.conn.cursor()
-		stre="insert into ExamenFisico(idExamen,idPregunta,idsRespuestas,posCorrecta) values ("+str(idExamen)+","+str(idPregunta)+","+vecIdsRtas+","+str(pos)+")"
+		stre="insert into ExamenFisico(idExamen,idPregunta,idsRespuestas,posCorrecta,idCurso) values ("+str(idExamen)+","+str(idPregunta)+","+vecIdsRtas+","+str(pos)+","+str(idCurso)+")"
 		print stre		
 		c.execute(stre)
 		#l=c.fetchall()
@@ -248,9 +257,28 @@ class Sqlite_base:
 		#l=c.fetchone()
 		self.conn.commit()
 		return True
+	def addExamen(self,nombre):
+		c = self.conn.cursor()
+		stre="insert into Examen(nombre) values ("
+		stre=stre+"'"+nombre+"'"+")"
+		print stre		
+		c.execute(stre)
+		#l=c.fetchall()
+		#l=c.fetchone()
+		self.conn.commit()
+		return True
+	
 	def getMaxIdAlumno(self):
 		c = self.conn.cursor()
 		c.execute("SELECT  CASE WHEN max( id)  IS NULL THEN 0 ELSE max( id)  END 'max' FROM Alumno")
+		#l=c.fetchall()
+		l=c.fetchone()
+		self.conn.commit()
+		return l[0]
+	
+	def getMaxIdExamen(self):
+		c = self.conn.cursor()
+		c.execute("SELECT  CASE WHEN max( id)  IS NULL THEN 0 ELSE max( id)  END 'max' FROM Examen")
 		#l=c.fetchall()
 		l=c.fetchone()
 		self.conn.commit()
@@ -318,9 +346,9 @@ class Sqlite_base:
 			ret.append(i[0])
 		self.conn.commit()
 		return ret
-	def getRespuesta(self,id):
+	def getRespuesta(self,ids):
 		c = self.conn.cursor()
-		c.execute("select respuesta from Respuesta where id="+str(id))
+		c.execute("select respuesta from Respuesta where id="+str(ids))
 		l=c.fetchall()
 		#l=c.fetchone()
 		ret=[]

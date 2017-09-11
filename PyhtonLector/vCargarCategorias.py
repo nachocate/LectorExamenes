@@ -32,15 +32,14 @@ class vCargarCategorias(mf8.MyFrame8):
 		if(self.m_grid8.GetNumberRows()!=0):
 			self.m_grid8.DeleteRows(0,self.m_grid8.GetNumberRows(),True)
 		
-		n=len(self.listaId)
-		print "refresh", n
-		if n>0:
+		
+		if self.listaId[0]:
+			n=len(self.listaId[1])
 			for i in range(0,n):
-				print "n>0",self.listaId[i]
-				print self.c.getNombreCategoria((self.listaId[i]))
+				print self.c.getNombreCategoria((self.listaId[1][i]))
 				self.m_grid8.AppendRows(1,False)
 				self.m_grid8.SetCellValue(i,0,str(i))
-				self.m_grid8.SetCellValue(i,1,self.c.getNombreCategoria((self.listaId[i])))
+				self.m_grid8.SetCellValue(i,1,self.c.getNombreCategoria((self.listaId[1][i])))
 	
 		
 	def bCargar( self, event ):

@@ -10,8 +10,7 @@ import codecs
 from docx import Document
 from docx.shared import Inches
 from docx.shared import Pt
-
-
+import os
 
 reload(sys)  # Reload does the trick!
 sys.setdefaultencoding('UTF8')
@@ -47,34 +46,32 @@ def leerPreguntasFijas(nombre):
 	file.close()
 	return Mat
 
-
-
-
-	
-
 def generarExamenPlano(nombre,M):
 	sec=["a)","b)","c)","d)","e)"]
 	document = Document()
 	p = document.add_paragraph('Examen Final ')
 	cont_preg=1;
-	cont=0
+	cont_rta=0
+	print  "Info de la M"
+	print "Tamanio de M",len(M)
 	for i in M:
-		if cont==0:
-			p=document.add_paragraph()
-			p=document.add_paragraph()
-			linea=str(cont_preg)+") "+i
-			cont_preg=cont_preg+1
-			p.add_run(linea).font.size=Pt(10)
-			cont=cont+1
-		else:
-			
-			p=document.add_paragraph()
-			ff=p.add_run(sec[cont-1]+" "+i)
-			ff.font.size=Pt(10)
-			ff.font.name="Arial"
-			cont=cont+1
-			if cont==6:
-				cont=0
+		print "Por cada i de M", len(i)
+		flag=True
+		cont_rta=0
+		for j in i:
+			if flag:
+				p=document.add_paragraph()
+				p=document.add_paragraph()
+				linea=str(cont_preg)+") "+j
+				p.add_run(linea).font.size=Pt(10)
+				flag=False
+			else:
+				p=document.add_paragraph()
+				ff=p.add_run(sec[cont_rta]+" "+j)
+				ff.font.size=Pt(10)
+				ff.font.name="Arial"
+				cont_rta=cont_rta+1
+		cont_preg=cont_preg+1
 			
 	document.save(nombre+".docx")
 	
@@ -290,7 +287,7 @@ def saveCSV(nombre,a1,a2,a3,a4,a5):
 	for i in range(0,len(a1)):
 		writer.writerow([a1[i],a2[i],a3[i],a4[i],a5[i]])
 	ofile.close()
-def genExamen(path,nombre, apellido,dni,idAlumno,idExamen):
+def genExamen(path,nombre, apellido,dni,idAlumno,idExamen,pathAux):
 	img=cv2.imread(path)
 	alto, ancho, canales = img.shape;
 	img=cv2.resize(img,(500, 800), interpolation = cv2.INTER_CUBIC)
@@ -339,5 +336,5 @@ def genExamen(path,nombre, apellido,dni,idAlumno,idExamen):
 	l=range(20*(idExamen-1)+1,(20*(idExamen-1)+21))
 	for i in range(0,20):
 		cv2.putText(img,str(l[i])+")",(15,int(203+ 28.4*i)), font,0.3,(0,0,0),1,1)
-	cv2.imwrite(nombre+apellido+str(idExamen)+'.png',img)
+	cv2.imwrite(pathAux+"/"+nombre+apellido+str(idExamen)+'.png',img)
 

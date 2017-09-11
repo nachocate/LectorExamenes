@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 
 ###########################################################################
-## Python code generated with wxFormBuilder (version Jul  7 2017)
+## Python code generated with wxFormBuilder (version Dec 21 2016)
 ## http://www.wxformbuilder.org/
 ##
 ## PLEASE DO "NOT" EDIT THIS FILE!
@@ -18,7 +18,7 @@ import wx.grid
 class MyFrame4 ( wx.Frame ):
 	
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"Categorias", pos = wx.DefaultPosition, size = wx.Size( 691,339 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"Categorias", pos = wx.DefaultPosition, size = wx.Size( 691,373 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 		
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 		
@@ -53,11 +53,11 @@ class MyFrame4 ( wx.Frame ):
 		self.m_grid3 = wx.grid.Grid( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
 		
 		# Grid
-		self.m_grid3.CreateGrid( 5, 5 )
+		self.m_grid3.CreateGrid( 0, 5 )
 		self.m_grid3.EnableEditing( True )
 		self.m_grid3.EnableGridLines( True )
 		self.m_grid3.EnableDragGridSize( False )
-		self.m_grid3.SetMargins( 0, 0 )
+		self.m_grid3.SetMargins( 10, 200 )
 		
 		# Columns
 		self.m_grid3.EnableDragColMove( False )

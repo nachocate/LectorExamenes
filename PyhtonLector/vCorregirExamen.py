@@ -17,12 +17,19 @@ class vCorregirExamen(mf3.MyFrame3):
 		mf3.MyFrame3.__init__(self,parent)
 		self.c=sqlb.Sqlite_base('base.db')
 		self.Archivos=[]
-		ids=self.c.get_Ids()
 		self.m_grid2.Show(True)
 		self.m_grid2.DeleteCols(0,self.m_grid2.GetNumberCols(),True)
 		self.m_grid2.DeleteRows(0,self.m_grid2.GetNumberRows(),True)
 		#inserto nuevas filas y columnas
-	
+		self.listaIdExamen=self.c.getIdExamen()
+		listaAux=[]
+		for i in self.listaIdExamen:
+			nombre=self.c.getNombreExamen(i)
+			print nombre
+			listaAux.append(nombre)
+			
+		self.m_choice4.AppendItems(listaAux)
+		
 		
 		self.m_grid2.AppendCols(5,False)
 		self.m_grid2.AppendRows(len(ids),False)
@@ -38,20 +45,41 @@ class vCorregirExamen(mf3.MyFrame3):
 		self.m_grid2.SetColLabelValue(3,'Dni')
 		self.m_grid2.SetColLabelValue(4,'Nota')
 		
+		self.Refresh(-1)
 		#self.m_grid2.AppendRows(n,False)
-		for ii in range(0,len(ids)):
-			i=ids[ii]
-			nombre=self.c.get_Nombre(i)
-			apellido=self.c.get_Apellido(i)
-			dni=self.c.get_Dni(i)
-			notaa=self.c.get_Nota(i)
-			print i,nombre,apellido,dni,notaa
-			self.m_grid2.SetCellValue(ii,0,str(i))
-			self.m_grid2.SetCellValue(ii,1,nombre)
-			self.m_grid2.SetCellValue(ii,2,apellido)
-			self.m_grid2.SetCellValue(ii,3,dni)
-			self.m_grid2.SetCellValue(ii,4,str(notaa))
-			
+		
+	def Refresh(self,idExamen):
+		res=[]
+		if idcat>=0:
+			res=self.c.getIdAlumnoExamen(idExamen)
+			if res[0]:
+				self.listaId=res[1]
+			else:
+				self.listaId=[]
+		else:
+			self.listaId=[]
+		print self.listaId	
+		if(self.m_grid2.GetNumberRows()!=0):
+			self.m_grid2.DeleteRows(0,self.m_grid2.GetNumberRows(),True)
+		
+		for i in self.listaId:
+			self.m_grid2.AppendRows(1,False)
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,str(i))
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,self.c.getNombre(i[0]))
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,self.c.getApellido(i[0]))
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,self.c.getDni(i[0]))
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,str(self.c.getNota(i[0])))
+
+				
+	
+
+	def cSeleccionarCurso(self,event):
+		pos=self.m_choice4.GetSelection()
+		print pos, self.listaIdExamen[pos]
+		self.Refresh(self.listaIdExamen[pos])
+		event.Skip()
+
+	
 	def cDirectorioExamenes( self, event ):
 		path=self.m_dirPicker1.GetPath()
 		#self.nombreArchi=path
@@ -72,25 +100,6 @@ class vCorregirExamen(mf3.MyFrame3):
 	
 	def cCorregirExamenes( self, event ):
 		ids=self.c.get_Ids()
-		self.m_grid2.Show(True)
-		self.m_grid2.DeleteCols(0,self.m_grid2.GetNumberCols(),True)
-		self.m_grid2.DeleteRows(0,self.m_grid2.GetNumberRows(),True)
-		#inserto nuevas filas y columnas
-	
-		
-		self.m_grid2.AppendCols(5,False)
-		self.m_grid2.AppendRows(len(ids),False)
-		self.m_grid2.SetColSize(0,120)
-		self.m_grid2.SetColSize(1,150)
-		self.m_grid2.SetColSize(2,70)
-		self.m_grid2.SetColSize(3,70)
-		self.m_grid2.SetColSize(4,70)
-		
-		self.m_grid2.SetColLabelValue(0,'Id')
-		self.m_grid2.SetColLabelValue(1,'Nombre')
-		self.m_grid2.SetColLabelValue(2,'Apellido')
-		self.m_grid2.SetColLabelValue(3,'Dni')
-		self.m_grid2.SetColLabelValue(4,'Nota')
 		
 		
 		for i in self.Archivos:
