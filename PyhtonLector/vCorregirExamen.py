@@ -21,18 +21,28 @@ class vCorregirExamen(mf3.MyFrame3):
 		self.m_grid2.DeleteCols(0,self.m_grid2.GetNumberCols(),True)
 		self.m_grid2.DeleteRows(0,self.m_grid2.GetNumberRows(),True)
 		#inserto nuevas filas y columnas
-		self.listaIdExamen=self.c.getIdExamen()
+		print "get id Examen",self.c.getIdExamen()
+		aux=self.c.getIdExamen() #ME traigo el id y el nombre del examen
 		listaAux=[]
-		for i in self.listaIdExamen:
-			nombre=self.c.getNombreExamen(i)
-			print nombre
-			listaAux.append(nombre)
+		self.listaIdExamen=[]
+		if(aux[0]):
+			for i in aux[1]:
+				self.listaIdExamen.append(i[0])
+				nombre=i[1]
+				listaAux.append(nombre)
+		#self.listaIdExamen=self.c.getIdExamen()
+		
+		#for i in self.listaIdExamen:
+		#	nombre=self.c.getNombreExamen(i)
+		#	print nombre
+		#	listaAux.append(nombre)
 			
 		self.m_choice4.AppendItems(listaAux)
 		
 		
 		self.m_grid2.AppendCols(5,False)
-		self.m_grid2.AppendRows(len(ids),False)
+		#self.m_grid2.AppendRows(len(ids),False)
+		self.m_grid2.AppendRows(10,False)
 		self.m_grid2.SetColSize(0,120)
 		self.m_grid2.SetColSize(1,150)
 		self.m_grid2.SetColSize(2,70)
@@ -45,15 +55,18 @@ class vCorregirExamen(mf3.MyFrame3):
 		self.m_grid2.SetColLabelValue(3,'Dni')
 		self.m_grid2.SetColLabelValue(4,'Nota')
 		
-		self.Refresh(-1)
+		#self.Refresh(-1)
 		#self.m_grid2.AppendRows(n,False)
 		
 	def Refresh(self,idExamen):
 		res=[]
-		if idcat>=0:
+		if idExamen>=0:
+			print "llego con idExamen ",idExamen
 			res=self.c.getIdAlumnoExamen(idExamen)
+			print res
 			if res[0]:
 				self.listaId=res[1]
+				print "lista id=",self.listaId
 			else:
 				self.listaId=[]
 		else:
@@ -61,21 +74,25 @@ class vCorregirExamen(mf3.MyFrame3):
 		print self.listaId	
 		if(self.m_grid2.GetNumberRows()!=0):
 			self.m_grid2.DeleteRows(0,self.m_grid2.GetNumberRows(),True)
+			print "deberia eliminar"
 		
 		for i in self.listaId:
 			self.m_grid2.AppendRows(1,False)
 			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,str(i))
-			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,self.c.getNombre(i[0]))
-			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,self.c.getApellido(i[0]))
-			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,self.c.getDni(i[0]))
-			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,0,str(self.c.getNota(i[0])))
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,1,self.c.getNombre(i))
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,2,self.c.getApellido(i))
+			self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,3,self.c.getDni(i))
+			#self.m_grid2.SetCellValue(self.m_grid2.GetNumberRows()-1,4,str(self.c.getNota(i)))
 
 				
 	
 
 	def cSeleccionarCurso(self,event):
 		pos=self.m_choice4.GetSelection()
-		print pos, self.listaIdExamen[pos]
+		print "List chioce:"
+		print self.listaIdExamen
+		print "pos", pos
+		print self.listaIdExamen[pos]
 		self.Refresh(self.listaIdExamen[pos])
 		event.Skip()
 
@@ -99,14 +116,16 @@ class vCorregirExamen(mf3.MyFrame3):
 		event.Skip()
 	
 	def cCorregirExamenes( self, event ):
-		ids=self.c.get_Ids()
+		#ids=self.c.get_Ids()
+		ids=self.c.getIdsExamen()
 		
 		
 		for i in self.Archivos:
-			idAlu,idExa,rta=ff.CorregirExamen(i)
-			print "--------- id Alumno: "+str(idAlu)+" ------------"
+			idAlu,idHoja,idExa,rta=ff.CorregirExamen1(i)
+			#idAlu,idExa,rta=ff.CorregirExamen(i)
+			print "Id Alumno: "+str(idAlu);
 			print "id Examen: "+str(idExa)
-			print rta
+			print "id Hoja: "+str(idHoja)
 			
 			nota=10
 			if ff.exist(idAlu,ids):

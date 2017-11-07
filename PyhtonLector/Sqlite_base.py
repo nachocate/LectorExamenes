@@ -4,11 +4,61 @@ import sqlite3
 
 
 class Sqlite_base:
+	
+	
 	def __init__(self,nombre):
 		self.nombre=nombre
 		self.conn = sqlite3.connect(nombre)
 	def __del__(self):
 		self.conn.close()
+	
+	def getIdAlumnoExamen(self,idExamen):
+		c = self.conn.cursor()
+		c.execute("select al.id from Alumno al inner join AlumnoCurso ac on al.id=ac.idAlumno where ac.idCurso=( select  ef.idCurso from ExamenFisico ef inner join Examen e on ef.idExamen=e.id where e.id= "+str(idExamen)+"  group by ef.idCurso) group by al.id")
+		l=c.fetchall()
+		ret=[]
+		for i in l:
+			ret.append(i[0])
+		self.conn.commit()
+		if len(ret)==0:
+			return [False, []]
+		else:
+			return [True,ret]
+	def getIdAlumnoDni(self, dni):
+		c = self.conn.cursor()
+		c.execute("select id from Alumno where dni="+str(dni))
+		l=c.fetchall()
+		ret=[]
+		for i in l:
+			ret.append(i[0])
+		self.conn.commit()
+		if len(ret)==0:
+			return [False, []]
+		else:
+			return [True,ret]
+	
+	def getIdExamen(self):
+		c = self.conn.cursor()
+		c.execute("select id, nombre From Examen")
+		l=c.fetchall()
+		ret=[]
+		for i in l:
+			ret.append([i[0],str(i[1])])
+		self.conn.commit()
+		if len(ret)==0:
+			return [False, []]
+		else:
+			return [True,ret]
+		
+	def addAlumnoCurso(self,idAlumno,idCurso):
+		c = self.conn.cursor()
+		stre="insert into AlumnoCurso(idAlumno,idCurso) values ("
+		stre=stre+str(idAlumno)+","+str(idCurso)+")"
+		print stre		
+		c.execute(stre)
+		self.conn.commit()
+		return True
+		
 	
 	def addCurso(self,nombre):
 		c = self.conn.cursor()
@@ -58,10 +108,10 @@ class Sqlite_base:
 	def getNombre(self,idal):
 		c = self.conn.cursor()
 		c.execute('select nombre from Alumno where id='+str(idal))
-		#l=c.fetchall()
-		l=c.fetchone()
+		l=c.fetchall()
+		#l=c.fetchone()
 		self.conn.commit()
-		return l[0]
+		return l[0][0]
 	def getNombreCurso(self,idal):
 		c = self.conn.cursor()
 		c.execute('select nombre from  Curso where id='+str(idal))
@@ -95,7 +145,7 @@ class Sqlite_base:
 	
 	def getIdAlumnoCurso(self,idal):
 		c = self.conn.cursor()
-		c.execute("select id from Alumno where idCurso="+str(idal))
+		c.execute("select ac.idAlumno from AlumnoCurso ac where ac.idCurso="+str(idal)+" group by ac.idAlumno")
 		l=c.fetchall()
 		cant=len(l)
 		res=[]
@@ -406,8 +456,49 @@ class Sqlite_base:
 		#l=c.fetchone()
 		self.conn.commit()
 		return True
+	def addHoja(self,idExamen,numero,cantidad):
+		c = self.conn.cursor()
+		c.execute("insert into Hoja(numero,idExamen,cantidad) values("+str(numero)+","+str(idExamen)+","+str(cantidad)+")")
+		#l=c.fetchall()
+		l=c.fetchone()
+		self.conn.commit()
+		return True
 
-		
+	
+
+	
+	def getCantidadHoja(self,idExamen,numero):
+		c = self.conn.cursor()
+		c.execute("select cantidad from Hoja where idExamen="+str(idExamen)+" and numero="+str(numero))
+		#l=c.fetchall()
+		l=c.fetchone()
+		self.conn.commit()
+		return l[0]
+	def getInfoHoja(self,idExamen):
+		c = self.conn.cursor()
+		c.execute("select id,numero,cantidad from Hoja where idExamen="+str(idExamen))
+		l=c.fetchall()
+		ret=[]
+		for i in l:
+			ret.append(i[0])
+		self.conn.commit()
+		return ret
+	def addRespuestaAlumno(self,idAlumno,idExamen,idHoja):
+		c = self.conn.cursor()
+		l=c.fetchone()
+		self.conn.commit()
+		return True
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 #c=Sqlite_base('base.db')
 #print c.ins_Alumno("nacho","cate","123565")
 #ids=c.get_Ids()

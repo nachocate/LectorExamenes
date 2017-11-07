@@ -41,30 +41,36 @@ class vCargarAlumnos(mf2.MyFrame2):
 		#self.Far=F.Sqlite_Farmacia('Sistema_Farmacias.db')
 		#self.Cargar_Fechas()
 	
-	def Refresh(self,idcat):
+	def Refresh(self,idCurso):
 		res=[]
-		if idcat>=0:
-			res=self.c.getIdAlumnoCurso(idcat)
+		print "idCurso entrante",idCurso
+		if idCurso>=0:
+			res=self.c.getIdAlumnoCurso(idCurso)
+			print "obtencion de get Id Alumno Curso:", res
 			if res[0]:
 				self.listaId=res[1]
 			else:
 				self.listaId=[]
 		else:
 			self.listaId=[]
-		print self.listaId	
+		print "lista id=", self.listaId	
 		if(self.m_grid1.GetNumberRows()!=0):
 			self.m_grid1.DeleteRows(0,self.m_grid1.GetNumberRows(),True)
 		
 		n=len(self.listaId)
-		print "refresh", n
+		print "cantidad de lista id: ",n
 		if n>0:
 			for i in range(0,n):
-				print "n>0",self.listaId[i]
-				print self.c.getNombre((self.listaId[i]))
+				#print "n>0",self.listaId[i]
+				#print self.c.getNombre((self.listaId[i]))
 				self.m_grid1.AppendRows(1,False)
+				print "----------------------EL VALOR DE I ES----------",i
+				print self.listaId[i]
+				print self.c.getNombre(self.listaId[i])
 				self.m_grid1.SetCellValue(i,0,self.c.getNombre((self.listaId[i])))
 				self.m_grid1.SetCellValue(i,1,self.c.getApellido((self.listaId[i])))
 				self.m_grid1.SetCellValue(i,2,self.c.getDni((self.listaId[i])))
+
 
 	
 	def cSeleccionarCurso(self,event):
@@ -91,8 +97,16 @@ class vCargarAlumnos(mf2.MyFrame2):
 		print pos
 		
 		#self.m_grid1.AppendRows(n,False)
+		
+		
 		for i in range(0,len(nom)):
-			self.c.ins_Alumno(nom[i],ape[i],dni[i],self.listaIdCurso[pos])
+			if(self.c.getIdAlumnoDni(dni[i])[0]):
+				idAlu=self.c.getIdAlumnoDni(dni[i])[1]
+				self.c.addAlumnoCurso(idAlu[0],self.listaIdCurso[pos])
+			else:
+				self.c.ins_Alumno(nom[i],ape[i],dni[i],self.listaIdCurso[pos])
+				idAlu=self.c.getIdAlumnoDni(dni[i])[1]
+				self.c.addAlumnoCurso(idAlu[0],self.listaIdCurso[pos])
 		
 		self.Refresh(self.listaIdCurso[pos])
 		#m_grid.DeleteRows(0,2)

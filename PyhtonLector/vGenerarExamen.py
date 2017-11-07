@@ -136,13 +136,17 @@ class vGenerarExamen(mf6.MyFrame6):
 		self.RtasCorrectas=[]
 		self.c.addExamen(self.m_textCtrl3.GetValue())
 		self.nombreExamen=self.m_textCtrl3.GetValue()
-		self.idCurso=self.idsCurso[self.m_choice2.GetCurrentSelection()]
+		print "este es el valor del getCurrentSelection "+str(self.m_choice5.GetCurrentSelection())
+		print "quizas deberia ser este: "+str(self.idsCat[self.m_choice5.GetCurrentSelection()])
+		print self.idsCurso,len(self.idsCurso)
+		self.idCurso=self.idsCurso[self.m_choice5.GetCurrentSelection()]
 		self.idExamen=self.c.getMaxIdExamen()
 		cont=1
 		for t in self.lista:
 			cantidad=t[1]
 			categoria=t[0]
 			idsPreguntas=self.c.getIdPreguntasCategoria(categoria)
+			print "error 1",len(idsPreguntas),cantidad
 			idsPregSelec=random.sample(idsPreguntas,cantidad)
 			idsRtas=[]
 			idsRtasSele=[]
