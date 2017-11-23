@@ -23,8 +23,8 @@ class vCargarPreguntas(mf5.MyFrame5):
 		self.m_grid4.DeleteRows(0,self.m_grid4.GetNumberRows(),True)
 		#inserto nuevas filas y columnas
 		self.m_grid4.AppendCols(2,False)
-		self.m_grid4.SetColSize(0,120)
-		self.m_grid4.SetColSize(1,150)				
+		self.m_grid4.SetColSize(0,160)
+		self.m_grid4.SetColSize(1,180)				
 		self.m_grid4.SetColLabelValue(0,'Nombre Categoria')
 		self.m_grid4.SetColLabelValue(1,'Cantidad de Preguntas ')
 		[val,self.idsCat]=self.c.getIdCategoria()

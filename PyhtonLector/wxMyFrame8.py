@@ -50,7 +50,7 @@ class MyFrame8 ( wx.Frame ):
 		self.m_grid8.EnableEditing( True )
 		self.m_grid8.EnableGridLines( True )
 		self.m_grid8.EnableDragGridSize( False )
-		self.m_grid8.SetMargins( 10, 10 )
+		self.m_grid8.SetMargins( 100, 200)
 		
 		# Columns
 		self.m_grid8.EnableDragColMove( False )
@@ -75,6 +75,8 @@ class MyFrame8 ( wx.Frame ):
 		bSizer69 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.m_button34 = wx.Button( self, wx.ID_ANY, u"Eliminar todas", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button34.Hide()
+		
 		bSizer69.Add( self.m_button34, 0, wx.ALL, 5 )
 		
 		
@@ -86,9 +88,12 @@ class MyFrame8 ( wx.Frame ):
 		bSizer58 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.m_button27 = wx.Button( self, wx.ID_ANY, u"Guardar", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button27.Hide()
+		
 		bSizer58.Add( self.m_button27, 0, wx.ALL, 5 )
 		
 		self.m_button28 = wx.Button( self, wx.ID_ANY, u"Cancelar", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button28.Hide()
 		bSizer58.Add( self.m_button28, 0, wx.ALL, 5 )
 		
 		

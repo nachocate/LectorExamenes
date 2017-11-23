@@ -59,6 +59,7 @@ class MyFrame7 ( wx.Frame ):
 		bSizer51 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.m_button26 = wx.Button( self, wx.ID_ANY, u"Cerrar", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button26.Hide()
 		bSizer51.Add( self.m_button26, 0, wx.ALL, 5 )
 		
 		

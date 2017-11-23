@@ -110,9 +110,11 @@ class MyFrame6 ( wx.Frame ):
 		bSizer41 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.m_button16 = wx.Button( self, wx.ID_ANY, u"Borrar Seleccionada", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button16.Hide()
 		bSizer41.Add( self.m_button16, 0, wx.ALL, 5 )
 		
 		self.m_button17 = wx.Button( self, wx.ID_ANY, u"Borrar todas", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button17.Hide()
 		bSizer41.Add( self.m_button17, 0, wx.ALL, 5 )
 		
 		
@@ -266,6 +268,7 @@ class MyFrame6 ( wx.Frame ):
 		bSizer38.Add( self.m_button21, 0, wx.ALL, 5 )
 		
 		self.m_button22 = wx.Button( self, wx.ID_ANY, u"Cancelar", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button22.Hide()
 		bSizer38.Add( self.m_button22, 0, wx.ALL, 5 )
 		
 		

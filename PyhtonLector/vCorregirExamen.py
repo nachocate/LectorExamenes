@@ -150,9 +150,6 @@ class vCorregirExamen(mf3.MyFrame3):
 		aux=self.c.getIdPosCorrecta(self.idExamen)
 		if aux[0]:
 			posCorrectas=aux[1]
-		
-		
-		
 		aux=self.c.getIdExamen()
 		idsExamenes=[]
 		if aux[0]:
@@ -161,21 +158,20 @@ class vCorregirExamen(mf3.MyFrame3):
 		aux=self.c.getIdAlumnoExamen(self.idExamen)
 		if aux[0]:
 			idsAlumnos=aux[1]
-			
-			
 		for i in self.Archivos:
-			idAlumno,Hoja,idExamenOb,rta=ff.CorregirExamen1(i)
-			#idAlu,idExa,rta=ff.CorregirExamen(i)
+			#idAlumno,Hoja,idExamenOb,rta=ff.CorregirExamen1(i)
+			idAlumno,np,Hoja,rta=ff.CorregirExamen1(i)
 			print "Id Alumno: "+str(idAlumno);
-			#print "id Examen: "+str(idExamenOb)
-			#print "id Hoja: "+str(Hoja)
+			print "Hoja: "+str(Hoja)
 			print "Las respuestas son:"
 			print rta
+			print "Las que deberian ser:"
+			print posCorrectas
 			correctas=0
 			#getCantPreguntasHoja(idExamen,hoja)
-			cantPreg=self.c.getCantPreguntasHoja(self.idExamen,idExamenOb)
+			cantPreg=self.c.getCantPreguntasHoja(self.idExamen,self.idExamen)
 			for j in range(0,cantPreg):
-				if(posCorrectas[j]==rta[j]):
+				if(posCorrectas[20*(Hoja-1)+j]==rta[j]):
 					correctas=correctas+1
 			if  idAlumno in idsAlumnos:
 				print "El alumno existe y el examen es el correcto. Se Actualiza"

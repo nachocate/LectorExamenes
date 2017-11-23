@@ -574,7 +574,7 @@ class Sqlite_base:
 		l=c.fetchall()
 		ret=[]
 		for i in l:
-			ret.append([i[0]])
+			ret.append(i[0])
 		self.conn.commit()
 		if len(ret)==0:
 			return [False, []]

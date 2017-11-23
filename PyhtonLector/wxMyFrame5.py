@@ -96,9 +96,13 @@ class MyFrame5 ( wx.Frame ):
 		bSizer29 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.m_button15 = wx.Button( self, wx.ID_ANY, u"Aceptar", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button15.Hide()
+		
 		bSizer29.Add( self.m_button15, 0, wx.ALL, 5 )
 		
 		self.m_button16 = wx.Button( self, wx.ID_ANY, u"Cancelar", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button16.Hide()
+		
 		bSizer29.Add( self.m_button16, 0, wx.ALL, 5 )
 		
 		
