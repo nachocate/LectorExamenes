@@ -46,7 +46,6 @@ class vCargarCategorias(mf8.MyFrame8):
 		#self.c.del_Categoria()
 		path=self.m_filePicker3.GetPath()
 		self.nombreArchi=path
-		self.c.del_Alumnos();
 		nom=ff.loadCSVCategoria(self.nombreArchi);
 		for i in range(0,len(nom)):
 			self.c.ins_Categoria(nom[i],i+1)

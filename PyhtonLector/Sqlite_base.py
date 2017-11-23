@@ -97,9 +97,11 @@ class Sqlite_base:
 		self.conn.commit()
 		return ret[0]
 	
+	
+	
 	def getCantidadPreguntas(self,idExamen):
 		c = self.conn.cursor()
-		c.execute('select count(id) from ExamenFisico where idExamen='+str(idExamen))
+		c.execute('select count() from ExamenFisico where idExamen='+str(idExamen))
 		l=c.fetchall()
 		#l=c.fetchone()
 		self.conn.commit()
@@ -207,12 +209,10 @@ class Sqlite_base:
 		return res
 	
 	
-	
 	def getDni(self,idal):
 		c = self.conn.cursor()
 		c.execute('select dni from  Alumno where id='+str(idal))
 		l=c.fetchall()
-		
 		#l=c.fetchone()
 		self.conn.commit()
 		return l[0][0]
@@ -433,12 +433,12 @@ class Sqlite_base:
 		self.conn.commit()
 		return True
 	
-	def del_Alumnos(self):
-		c = self.conn.cursor()
-		stre="delete from Alumno"
-		c.execute(stre)
-		self.conn.commit()
-		return True
+#	def del_Alumnos(self):
+#		c = self.conn.cursor()
+#		stre="delete from Alumno"
+#		c.execute(stre)
+#		self.conn.commit()
+#		return True
 	def del_Categoria(self):
 		c = self.conn.cursor()
 		stre="delete from Categoria"
@@ -464,9 +464,6 @@ class Sqlite_base:
 		self.conn.commit()
 		return True
 
-	
-
-	
 	def getCantidadHoja(self,idExamen,numero):
 		c = self.conn.cursor()
 		c.execute("select cantidad from Hoja where idExamen="+str(idExamen)+" and numero="+str(numero))
@@ -488,32 +485,99 @@ class Sqlite_base:
 		l=c.fetchone()
 		self.conn.commit()
 		return True
+	#-------------------------------------------------------------------------------------------
+	def addExamenAlumno(self,idExamen,idAlumno,hoja,totalPreg):
+		c = self.conn.cursor()
+		c.execute("insert into ExamenAlumno (idExamen,idAlumno,hoja,totalPreg) values ("+str(idExamen)+","+str(idAlumno)+","+str(hoja)+","+str(totalPreg)+")")
+		self.conn.commit()
+		return True
+	def updateExamenAlumno(self,idExamen,idAlumno,hoja,correctas):
+		c = self.conn.cursor()
+		c.execute("update ExamenAlumno set correctas="+str(correctas)+", corregida="+str(1)+" where idExamen="+str(idExamen)+" and idAlumno="+str(idAlumno)+" and hoja="+str(hoja))
+		self.conn.commit()
+		return True
+	def getCorregida(self,idExamen,idAlumno,hoja):
+		c = self.conn.cursor()
+		c.execute("select corregida from ExamenAlumno where idExamen="+str(idExamen)+" and idAlumno="+str(idAlumno)+" and hoja="+str(hoja))
+		l=c.fetchone()
+		self.conn.commit()
+		return l[0]	
+	def getCorrectas(self,idExamen,idAlumno,hoja):
+		c = self.conn.cursor()
+		c.execute("select correctas from ExamenAlumno where idExamen="+str(idExamen)+" and idAlumno="+str(idAlumno)+" and hoja="+str(hoja))
+		l=c.fetchone()
+		self.conn.commit()
+		return l[0]
+	
+	def getResultadoParcialExamenAlumno(self,idExamen):
+		c = self.conn.cursor()
+		cons="select idAlumno, idExamen,sum(correctas),sum(corregida) from ExamenAlumno where idExamen="
+		cons=cons+str(idExamen)+" and corregida=1 group by idAlumno"
+		c.execute(cons)
+		l=c.fetchall()
+		#ret=[]
+		#for i in l:
+		#	ret.append([i[0])
+		self.conn.commit()
+		return l
+	def getResultadoParcialTodosExamenAlumno(self,idExamen):
+		c = self.conn.cursor()
+		cons="select idAlumno, idExamen,sum(correctas),sum(corregida) from ExamenAlumno where idExamen="
+		cons=cons+str(idExamen)+" group by idAlumno"
+		c.execute(cons)
+		l=c.fetchall()
+		#ret=[]
+		#for i in l:
+		#	ret.append([i[0])
+		self.conn.commit()
+		return l
 
+	def getResultadoFinalExamenAlumno(self,idExamen,cantHojas):
+		c = self.conn.cursor()
+		cons="select idAlumno, idExamen,sum(correctas),sum(corregida) from ExamenAlumno where idExamen="+str(idExamen)+" and corregida=1"
+		cons=cons+" group by idAlumno having sum(corregida) ="+str(cantHojas)
+		c.execute(cons)
+		l=c.fetchall()
+		#ret=[]
+		#for i in l:
+		#	ret.append([i[0])
+		self.conn.commit()
+		return l
+	def getCantPreguntas(self,idExamen):
+		c = self.conn.cursor()
+		c.execute("select count(idPregunta) from ExamenFisico where idExamen="+str(idExamen))
+		l=c.fetchone()
+		self.conn.commit()
+		return l[0]
+	def getCantPreguntasHoja(self,idExamen,hoja):
+		c = self.conn.cursor()
+		c.execute("select totalPreg from ExamenAlumno where idExamen="+str(idExamen)+" and hoja="+str(hoja)+" group by idExamen")
+		l=c.fetchone()
+		self.conn.commit()
+		return l[0]
 	
+	def getCantHojas(self,idExamen,pregPorExam=20):
+		print "llego get cant hojas"
 	
-	
-	
-	
-	
-	
-	
-	
-	
-#c=Sqlite_base('base.db')
-#print c.ins_Alumno("nacho","cate","123565")
-#ids=c.get_Ids()
-#print ids
+		totalPreg=self.getCantPreguntas(idExamen)
+		print "total preguntas:",totalPreg
+		print "preguntas por examen",pregPorExam
+		cant=totalPreg/pregPorExam
+		if(totalPreg%pregPorExam>0):
+			cant=cant+1	
+		print "cantidad de hojas",cant
+		return cant
 
-#c.del_Alumnos()
-#ids=c.get_Ids()
-#print ids
-
-
-#print c.ins_Alumno("nacho","cate","123565")
-
-#print c.get_Nombre(1)
-#print c.get_Apellido(1)
-#print c.get_Dni(1)
-#print c.set_Nota(1,10)
-#print c.get_Nota(1)
+	def getIdPosCorrecta(self,idExamen):
+		c = self.conn.cursor()
+		c.execute("select posCorrecta from ExamenFisico where idExamen="+str(idExamen)+" order by id asc")
+		l=c.fetchall()
+		ret=[]
+		for i in l:
+			ret.append([i[0]])
+		self.conn.commit()
+		if len(ret)==0:
+			return [False, []]
+		else:
+			return [True,ret]
 

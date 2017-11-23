@@ -287,7 +287,7 @@ def saveCSV(nombre,a1,a2,a3,a4,a5):
 	for i in range(0,len(a1)):
 		writer.writerow([a1[i],a2[i],a3[i],a4[i],a5[i]])
 	ofile.close()
-def genExamen(path,nombre, apellido,dni,idAlumno,idExamen,pathAux):
+def genExamen(path,nombre, apellido,dni,idAlumno,idExamen,idHoja,pathAux):
 	img=cv2.imread(path)
 	alto, ancho, canales = img.shape;
 	img=cv2.resize(img,(500, 800), interpolation = cv2.INTER_CUBIC)
@@ -307,6 +307,7 @@ def genExamen(path,nombre, apellido,dni,idAlumno,idExamen,pathAux):
 	idExamenBinario=bin(idExamen)[2:].zfill(12)
 
 	
+
 	
 	for i in range(0,12):
 		if idExamenBinario[i]=='1':
@@ -317,6 +318,9 @@ def genExamen(path,nombre, apellido,dni,idAlumno,idExamen,pathAux):
 		for i in range(0,12):
 			for j in range(0,11):
 				img[int(x+i),int(y+j)]=[0,0,0]
+
+
+
 	
 	
 	alt=151
@@ -415,10 +419,15 @@ def CorregirExamen1(path):
 	idHoja=0
 	idExamen=0
 	for i in range(0,3):
-		idHoja=hoja+m.pow(2,3-i-1)
+		#idHoja=idHoja+m.pow(2,3-i-1)
+		idHoja=idHoja+vIdExamen[i]*m.pow(2,2-i)
 	for i in range(3,12):
-		idExamen=idExamen+m.pow(2,12-i-1)
-		
+		idExamen=idExamen+vIdExamen[i]*m.pow(2,12-i-1)
+	
+	
+	print "Resultados reales"
+	print "id Examen="+str(idExamen)
+	print "idHoja="+str(idHoja)
 	#cout<<"--------Num EXAMEN---------------------"<<endl
 	#print "contador para examen: "+ str(contador)
 	#print "idex: "+ str(idex)

@@ -67,9 +67,14 @@ class vCargarAlumnos(mf2.MyFrame2):
 				print "----------------------EL VALOR DE I ES----------",i
 				print self.listaId[i]
 				print self.c.getNombre(self.listaId[i])
-				self.m_grid1.SetCellValue(i,0,self.c.getNombre((self.listaId[i])))
-				self.m_grid1.SetCellValue(i,1,self.c.getApellido((self.listaId[i])))
-				self.m_grid1.SetCellValue(i,2,self.c.getDni((self.listaId[i])))
+				nombre=self.c.getNombre(self.listaId[i])
+				apellido=self.c.getApellido(self.listaId[i])
+				dni=self.c.getDni(self.listaId[i])
+				print "aca esta el error"
+				print nombre, apellido,dni
+				self.m_grid1.SetCellValue(i,0,nombre)
+				self.m_grid1.SetCellValue(i,1,apellido)
+				self.m_grid1.SetCellValue(i,2,dni)
 
 
 	

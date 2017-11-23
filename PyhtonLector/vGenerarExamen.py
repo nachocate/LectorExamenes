@@ -157,16 +157,54 @@ class vGenerarExamen(mf6.MyFrame6):
 				matRespuestas= self.c.getRespuestaPreguntaCompuesta(i)
 				resp=0
 				r=[]
-				
+				contadorcito=1
 				for j in vDesorden:
 					r.append(matRespuestas[j][0])
 					if matRespuestas[j][3]==1:
-						resp=j
-				
+						print "valor de j encontrado verdadero ="
+						print j
+						print contadorcito
+						print vDesorden
+						resp=contadorcito
+					else:
+						print matRespuestas[j][3]
+					contadorcito=contadorcito+1
+				if resp==0:
+					print "!!!!!!!!!!!!!!!!!!!!!error!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+					print matRespuestas
+					
 				self.c.AddExamenFisico(self.idExamen,i,json.dumps(json.dumps(r)),resp,self.idCurso)	
 						#idExamen,idPregunta,idsRespuestas,posCorrecta
-		self.Refresh6()				
+		self.cargarExamenAlumno(self.idExamen,self.idCurso)
+		self.Refresh6()
+		
+		
+		
 		event.Skip()
+		
+	def cargarExamenAlumno(self,idExamen,idCurso):
+		IdsAlumnos=[]
+		aux=self.c.getIdAlumnoCurso(idCurso)
+		if aux[0]:
+			IdsAlumnos=aux[1]
+		totalPreguntas=self.c.getCantPreguntas(idExamen)
+		print "totalPreguntas=",totalPreguntas
+		cantidadHojas=self.c.getCantHojas(idExamen)
+		print "cantidadHojas",cantidadHojas
+		laux=[]
+		for j in range(1,cantidadHojas+1):
+			if(j*20>totalPreguntas):
+				laux.append(totalPreguntas-((j-1)*20))
+			else:
+				laux.append(20)
+		for i in IdsAlumnos:
+			cont=1
+			for j in laux:
+				print "agrego alumnos idExamen: "+str(idExamen)+" idalumno: "+str(i) 
+				self.c.addExamenAlumno(idExamen,i,cont,j)
+				cont=cont+1
+			
+		
 	
 	def bSeleccionarTodos( self, event ):
 		event.Skip()
@@ -213,14 +251,16 @@ class vGenerarExamen(mf6.MyFrame6):
 				cantEx=cantEx+1
 				break
 		if idsAlumnos[0]==True:
-			
 			print len(idsAlumnos),idsAlumnos
 			for i in idsAlumnos[1]:
+				print "Id del alumno", i
 				nombre1=self.c.getNombre(i)
 				apellido=self.c.getApellido(i)
 				dni=self.c.getDni(i)
+				print nombre, apellido, dni
 				for j in range(1,cantEx+1):
-					ff.genExamen("Prueba.png",nombre1,apellido,dni,i,j,aux21+"/")
+					#def genExamen(path,nombre, apellido,dni,idAlumno,idExamen,idHoja,pathAux):
+					ff.genExamen("Prueba.png",nombre1,apellido,dni,i,j,j,aux21+"/")
 		print "joya!"
 		event.Skip()
 	
